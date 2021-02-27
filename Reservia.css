@@ -1,0 +1,794 @@
+/* Définition d'une nouvelle police nommée Raleway-VariableFont_wghts */
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+
+@font-face 
+{ 
+    font-family: 'Raleway-VariableFont_wghts';
+    src: url('police/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+
+/*Mise en place de la police et application d'une largeur de 98% de l'écran*/
+.bloc_page
+{
+    font-family: Raleway-VariableFont_wghts;
+    width: 90%;
+    margin: auto
+}
+
+/* Mise en page du header*/
+.haut_de_page
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.haut_de_page img
+{
+    width: 96px;
+    height: 45px;
+    padding-top: 50px;
+}
+
+.haut_de_page nav
+{
+    padding-top: 25px;
+}
+
+.haut_de_page nav ul
+{
+    display: flex;
+    flex-direction: row;
+    margin-right: 35px;
+    list-style-type: none;
+}
+
+.haut_de_page nav li
+{
+    margin-left: 50px;
+}
+
+.haut_de_page a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+}
+
+.haut_de_page nav a:hover
+{
+    box-sizing: content-box;
+    width: 100%;
+    border-top: 2px solid #0065FC;
+    padding: 20px;
+}
+
+.texte 
+{
+    line-height: 0.8em;
+    margin-top: 20px;
+}
+    
+.texte h1
+{
+    font-size: 1.2em;
+}
+
+.texte h2
+{
+    Font-size: 1em;
+    font-weight: normal;
+}
+
+/*Mise en page de la section Filtre*/
+
+.recherche_ville
+{
+    display: flex;
+    margin-top: 20px;
+}
+
+.icon_map
+{
+   background-color: #F2F2F2;
+   padding: 10px 10px 10px 14px;
+   width: 40px;
+   border-radius: 10px 0px 0px 10px;
+}
+
+.search
+{
+    padding-left: 12px;
+    border-top: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
+    border-left: none;
+    border-right:none;
+    font-weight: bold;
+    font-size: 0.8em;
+    width: 190px;
+}
+
+
+/*Pourquoi la taille du texte "rechercher" n'a pas changé?*/
+.bouton
+{
+    color: white;
+    font-weight: bold;
+    font-size: 0.8em;   
+    background-color: #0065FC;
+    border-radius: 0% 10px 10px 00%;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.filtre_hebergement
+{
+    display: flex;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.filtre_hebergement h2
+{
+    font-size: 01em;
+    font-weight: bold;
+}
+/*Mise en page du filtre Economique*/
+
+.slider_E
+{
+    position: relative;
+    display:block;
+    margin-left: 45px;
+    width:150px;
+    height: 39px;
+    cursor: pointer;
+    transition: all .2s;
+    border: 2px solid #F2F2F2;
+    border-radius: 34px;
+    padding-right: 10px;
+    Padding-left: 25px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size:1em;
+}
+
+.slider_E:hover
+{
+    background-color: #F2F2F2;
+}
+
+.switch_E input
+{
+    display: none;
+}
+
+.slider_E:before
+{
+    position: absolute;    
+    transition: all .2s;
+    content:"";
+    height: 38px;
+    width: 38px;
+    Border-radius: 34px;
+    top: -2.5px;
+    left:-4px;
+    background: url('images/money_bleu.svg') no-repeat;
+    background-size: 40%;
+    background-color:  #DEEBFF;
+    background-position: center;
+}
+
+input:checked + .slider_E
+{
+    background-color: #0065FC;
+    color: white;
+    padding-right: 40px;
+}
+
+input:checked + .slider_E:before
+{
+    transform: translateX(116px) ;
+}
+
+/*Mise en page du filtre Familial*/
+
+.slider_F
+{
+    position: relative;
+    display: block;
+    margin-left: 45px;
+    width:110px;
+    height: 39px;
+    cursor: pointer;
+    transition: all .2s;
+    border: 2px solid #F2F2F2;
+    border-radius: 34px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size:1em;
+}
+
+.slider_F:hover
+{
+    background-color:#F2F2F2;
+}
+
+.switch_F input
+{
+    display: none;
+}
+
+.slider_F:before
+{
+    position:absolute;
+    content:"";
+    transition: all .2s;
+    top: -2.5px;
+    Left: -4px;
+    height: 38px;
+    width: 38px;
+    border-radius: 34px;
+    background: url('images/child.svg') no-repeat;
+    background-size: 40%;
+    background-color:  #DEEBFF;
+    background-position: center;
+}
+
+
+/* Il faut décaler le texte un peu mais je n'y arrive pas avec le padding.*/
+input:checked + .slider_F
+{
+    background-color: #0065FC;
+    color: white; 
+    padding-right: 40px;
+}
+
+input:checked + .slider_F:before
+{
+    transform: translateX(74px);
+}
+
+/*Mise en page du filtre Romantique*/
+
+.slider_R
+{
+    position: relative;
+    display:block;
+    margin-left: 45px;
+    cursor: pointer;
+    border: 2px solid #F2F2F2;
+    border-radius: 34px;
+    font-weight: bold;
+    font-size: 01em;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 150px;
+    height: 39px;
+    Padding-left: 45px;
+}
+
+.slider_R:hover
+{
+    background-color:#F2F2F2;
+}
+
+.switch_R input
+{
+    display: none;
+}
+
+.slider_R:before
+{
+    position: absolute;
+    content:"";
+    transition: all .2s;
+    height: 38px;
+    width: 38px;
+    border-radius: 34px;
+    top: -2.5px;
+    left: -4px;
+    background: url('images/heart-solid.svg') no-repeat;
+    background-size: 40%;
+    background-position: center;
+    background-color: #DEEBFF;
+}
+
+
+/*Même prblème, le texte ne se décale pas malgré le padding que je lui applique*/
+input:checked + .slider_R
+{
+    background-color:#0065FC;
+    color: white;
+    padding-right: 20px;
+}
+
+input:checked + .slider_R:before
+{
+    transform: translateX(122px)
+}
+
+/*Mise en page du filtre Animaux*/
+/*Le texte ne bouge pas comme pour economique et familiale pourquoi?*/
+
+.slider_A
+{
+    position: relative;
+    display: block;
+    margin-left: 45px;
+    padding-top:11px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border: 2px solid #F2F2F2;
+    border-radius: 34px;
+    width: 192px;
+    height: 39px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.slider_A:hover
+{
+    background-color:#F2F2F2;
+}
+
+.switch_A input
+{
+    display: none;
+}
+
+.slider_A:before
+{
+    position: absolute;
+    transition: all .2s;
+    content:"";
+    height: 38px;
+    width: 38px;
+    top: -2.5px;
+    left:-4px;
+    border-radius: 34px;
+    background: url('images/dog-solid.svg') no-repeat;
+    background-size: 40%;
+    background-position: center;
+    background-color: #DEEBFF;
+}
+
+input:checked + .slider_A
+{
+    background-color: #0065FC;
+    color: white;
+}
+
+input:checked + .slider_A:before
+{
+    transform: translateX(164px)
+}
+/*Mise en page de la section information*/
+
+.information img
+{
+    height: 15px;
+    width: 15px;
+    border: 2px solid #F2F2F2;
+    border-radius: 34px;
+    padding: 2px;
+    margin-bottom: 10px
+}
+
+.information
+{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.information h4
+{
+    font-size: 0.8em;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+/*Mise en page section hébergement*/
+
+.bloc_vertical
+{
+    display: flex;
+
+}
+
+.les_hebergements
+{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    align-content: space-between;
+    background-color: #F2F2F2;
+    width: 670px;
+    height: 350px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.hebergements
+{
+    height: 470px;
+    width: 725px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    padding-top: 10px;
+}
+
+.hebergements h3
+{
+    font-size: 1em;
+    font-weight: bold;
+    padding-left: 30px;
+    border: blue;
+}
+
+.hebergements a
+{
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-left: 30px;
+    color:black;
+}
+
+.hebergements a:hover
+{
+    text-decoration: 2px black underline;
+}
+
+.etoile img
+{
+    width: 15px;
+    height: 10px;
+    margin-right: -2px;
+}
+
+/*Comment remonter les étoiles de 1 ou 2 px ?*/
+.etoile
+{
+    margin-left: 8px;
+}
+
+.bloc_cannebiere
+{
+    display: flex;
+    margin-right: 30px;
+    flex-direction: column;
+    width: 200px;
+    height: 160px;
+    background: white;
+    border-radius: 15px;
+    line-height: 0.2em;
+    box-shadow: -2px 1px 6px 4px #e0dede;
+}
+
+.image_auberge_de_la_cannebiere
+{
+    width: 192px;
+    height: 100px;
+    background: url('images/hebergements/3_medium/Cannebiere.jpg') no-repeat;
+    background-size: 100%;
+    border-radius: 15px 15px 0px 0px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-left: 4px; 
+}
+
+.description_cannebiere .nom
+{
+    font-weight: bold;
+}
+
+.description_cannebiere
+{
+    font-size: 0.8em;
+    margin-left: 8px;
+}
+
+/* Mise en page bloc hotel du port */
+
+.bloc_hotel_du_port
+{
+    
+    flex-direction: column;
+    margin-right:30px;
+    width: 200px;
+    height: 160px;
+    background: white;
+    border-radius: 15px;
+    line-height: 0.2em;
+    box-shadow: -2px 1px 6px 4px #e0dede;
+}
+
+.image_hotel_du_port
+{
+    width: 192px;
+    height: 100px;
+    background: url('images/hebergements/3_medium/hotel_du_port.jpg') no-repeat;
+    background-size: 100%;
+    border-radius: 15px 15px 0px 0px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-left: 4px; 
+}
+
+.description_hotel_du_port .nom
+{
+    font-weight: bold;
+}
+
+.description_hotel_du_port
+{
+    font-size: 0.8em;
+    margin-left: 8px;
+}
+
+/* Mise en page bloc hotel Les mouettes */
+
+.bloc_hotel_les_mouettes
+{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 160px;
+    background: white;
+    border-radius: 15px;
+    line-height: 0.2em;
+    box-shadow: -2px 1px 6px 4px #e0dede;
+}
+
+.image_hotel_les_mouettes
+{
+    width: 192px;
+    height: 100px;
+    background: url('images/hebergements/3_medium/hotel_les_mouettes.jpg') no-repeat;
+    background-size: 100%;
+    border-radius: 15px 15px 0px 0px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-left: 4px; 
+}
+
+.description_hotel_les_mouettes .nom
+{
+    font-weight: bold;
+}
+
+.description_hotel_les_mouettes
+{
+    font-size: 0.8em;
+    margin-left: 8px;
+}
+
+/*Mise en page du bloc hotel de la mer*/
+
+.bloc_hotel_de_la_mer
+{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    width: 200px;
+    height: 160px;
+    background: white;
+    border-radius: 15px;
+    line-height: 0.2em;
+    box-shadow: -2px 1px 6px 4px #e0dede;
+}
+
+.image_hotel_de_la_mer
+{
+    width: 192px;
+    height: 100px;
+    background: url('images/hebergements/3_medium/hotel_de_la_mer_2.jpg') no-repeat;
+    background-size: 100%;
+    border-radius: 15px 15px 0px 0px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-left: 4px; 
+}
+
+.description_hotel_de_la_mer .nom
+{
+    font-weight: bold;
+}
+
+.description_hotel_de_la_mer
+{
+    font-size: 0.8em;
+    margin-left: 8px;
+}
+
+/*Mise en page bloc auberge du panier*/
+
+.bloc_auberge_le_panier
+{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    width: 200px;
+    height: 160px;
+    background: white;
+    border-radius: 15px;
+    line-height: 0.2em;
+    box-shadow: -2px 1px 6px 4px #e0dede;
+}
+
+.image_auberge_le_panier
+{
+    width: 192px;
+    height: 100px;
+    background: url('images/hebergements/3_medium/auberge_le_panier.jpg') no-repeat;
+    background-size: 100%;
+    border-radius: 15px 15px 0px 0px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-left: 4px; 
+}
+
+.description_auberge_le_panier .nom
+{
+    font-weight: bold;
+}
+
+.description_auberge_le_panier
+{
+    font-size: 0.8em;
+    margin-left: 8px;
+}
+
+/*Mise en page bloc hotel chez Amina*/
+
+.bloc_hotel_chez_amina
+{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 160px;
+    background: white;
+    border-radius: 15px;
+    line-height: 0.2em;
+    box-shadow: -2px 1px 6px 4px #e0dede;
+}
+
+.image_hotel_chez_amina
+{
+    width: 192px;
+    height: 100px;
+    background: url('images/hebergements/3_medium/hotel_chez_amina.jpg') no-repeat;
+    background-size: 100%;
+    border-radius: 15px 15px 0px 0px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-left: 4px; 
+}
+
+.description_hotel_chez_amina .nom
+{
+    font-weight: bold;
+}
+
+.description_hotel_chez_amina
+{
+    font-size: 0.8em;
+    margin-left: 8px;
+}
+
+/*Mise en page bloc droit*/
+
+.les_plus_populaires
+{   flex:2;
+    border: solid red;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    margin-left: 30px;
+}
+
+.titre_populaires
+{
+    display: flex;
+    justify-content: space-between;
+    border: solid blue;
+    
+}
+
+.titre_populaires a
+{
+    font-size: 01em;
+    font-weight:bold;
+    padding-top: 20px;
+    align-self: flex-end;
+    text-decoration: none;
+    color: black;
+    margin-left: 30px;
+    
+}
+
+.titre_populaires img
+{
+    width: 5%;
+    margin-right: 30px;
+    align-self:flex-end;
+}
+
+.bloc_hotel_le_soleil_du_matin
+{
+    display: flex;
+    height: 140px;
+    width: 300px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+.image_hotel_le_soleil_du_matin
+{
+    display:flex;
+    height: 132px;
+    width: 130px;
+    border-radius: 15px 0px 0px 15px;
+    background-image: url('images/hebergements/3_medium/hotel_le_soleil_du_matin_4.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-bottom: 4px;
+}
+
+.description_hotel_le_soleil_du_matin
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.description_hotel_le_soleil_du_matin
+{
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    margin-left: 10px;
+}
+
+.description_hotel_le_soleil_du_matin .nom
+{
+    font-weight: bold;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+.description_hotel_le_soleil_du_matin .prix
+{
+    font-size: 0.8em;
+    margin-top: -10px;
+
+}
+
+.etoile_droite
+{
+    display: flex;
+    width: 15px;
+    height: 10px;
+    margin-top: 50px;
+}

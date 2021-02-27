@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel=stylesheet href="Reservia.css">
+     <script src="https://kit.fontawesome.com/b6c58def4c.js" crossorigin="anonymous"></script>
+    <title>Reservia deuxième méthode</title>
+</head>
+    <body>
+        <div class="bloc_page">
+            <header>
+                <div class="haut_de_page">
+                    <img src="images/logo/logo.png" alt="logo reservia">
+                    <nav>
+                    <ul>
+                        <li><a href="#">Hébergements</a></li>
+                        <li><a href="#">Activités</a></li>
+                        <li><a href="#">S'inscrire</a></li>
+                    </ul>
+                </nav>
+                </div>
+                    <div class="texte">
+                        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                        <h2>En plein centre ville ou en pleine nature</h2>
+                    </div>
+             
+            </header>
+            <section class="filtre">
+                <form class="recherche_ville" method="post" action="traitement.php"> 
+                    <div class="icon_map"><i class="fas fa-map-marker-alt"></i></div><input class="search" type="search" placeholder="Marseille, France"/><input class=" bouton" type="submit" value="Rechercher"/>
+                </form>
+                
+                <div class="filtre_hebergement">
+                    <h2>Filtres</h2>
+                 <label class="switch_E">
+                    <input type="checkbox">
+                    <span class="slider_E">Économique</span>
+                </label>
+                
+                <label class="switch_F">
+                    <input type="checkbox">
+                    <span class="slider_F">Familial</span>
+                </label>
+
+                <label class="switch_R">
+                    <input type="checkbox">
+                    <span class="slider_R">Romantique</span>
+                </label>
+                <label class="switch_A">
+                    <input type="checkbox">
+                    <span class="slider_A">Animaux autorisés</span>
+                </label>
+                </div>
+            </section>
+        
+            <section class="information">
+                <div class="info">
+                    <img src="images/info-solid.svg" alt="information" /> <h4>Plus de 500 logements disponibles dans cette ville</h4>
+                </div>
+            </section>
+            <section class="bloc_vertical">
+                <section class="hebergements">
+                    <h3>Hébergements à Marseille</h3>
+                    <div class="les_hebergements">
+                        <div class="bloc_cannebiere">
+                            <div class="image_auberge_de_la_cannebiere">
+                            </div>
+                        <div class="description_cannebiere">
+                            <p class="nom">Auberge de la cannebière</p>
+                            <p class="prix">A partir de 25€</p>
+                        </div>  
+                        <div class=etoile>
+                            <img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-grise.svg" alt="etoile grise">
+                        </div>
+                        </div>
+
+                        <div class="bloc_hotel_du_port">
+                            <div class="image_hotel_du_port">
+                            </div>
+                        <div class="description_hotel_du_port">
+                            <p class="nom">Hôtel du port</p>
+                            <p class="prix">A partir de 52€</p>
+                        </div>
+                        <div class=etoile>
+                            <img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée">
+                        </div>
+                        </div>
+
+                        <div class="bloc_hotel_les_mouettes">
+                            <div class="image_hotel_les_mouettes">
+                            </div>
+                        <div class="description_hotel_les_mouettes">
+                            <p class="nom">Hôtel Les mouettes</p>
+                            <p class="prix">A partir de 76€</p>
+                        </div>
+                        <div class=etoile>
+                            <img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-grise.svg" alt="etoile grise">
+                        </div>
+                        </div>
+
+                        <div class="bloc_hotel_de_la_mer">
+                            <div class="image_hotel_de_la_mer">
+                            </div>
+                        <div class="description_hotel_de_la_mer">
+                            <p class="nom">Hôtel de la mer</p>
+                            <p class="prix">A partir de 46€</p>
+                        </div>
+                        <div class=etoile>
+                            <img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-grise.svg" alt="etoile grise"><img src="images/star-grise.svg" alt="etoile grise">
+                        </div>
+                        </div>
+
+                        <div class="bloc_auberge_le_panier">
+                            <div class="image_auberge_le_panier">
+                            </div>
+                        <div class="description_auberge_le_panier">
+                            <p class="nom">Auberge Le Panier</p>
+                            <p class="prix">A partir de 23€</p>
+                        </div>
+                        <div class=etoile>
+                            <img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-grise.svg" alt="etoile grise">
+                        </div>
+                        </div>
+
+                        <div class="bloc_hotel_chez_amina">
+                            <div class="image_hotel_chez_amina">
+                            </div>
+                        <div class="description_hotel_chez_amina">
+                            <p class="nom">Hôtel chez Amina</p>
+                            <p class="prix">A partir de 96€</p>
+                        </div>
+                        <div class=etoile>
+                            <img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-grise.svg" alt="etoile grise">
+                        </div>
+                        </div>
+                    </div>
+                    <a href="#">Afficher plus</a>
+                </section>
+                <aside class="les_plus_populaires">
+                    <div class="titre_populaires">
+                        <a href="#">Les plus populaires </a>
+                        <img src="images/populaire.svg" alt="icon_populaire">
+                    </div>
+                   
+                    <div class="bloc_hotel_le_soleil_du_matin">
+                        <div class="image_hotel_le_soleil_du_matin">
+                        </div>
+                        <div class="description_hotel_le_soleil_du_matin">
+                            <p class="nom">Hôtel Le soleil du matin </p>
+                            <p class="prix">Nuit à partir de 128€</p>
+                            <div class="etoile_droite">
+                                <img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bloc_au_coeur_deleau">
+                        <div class="image_au_coeur_deleau">
+                        </div>
+                        <div class="description_au_coeur_deleau">
+                            <p class="nom">Au coeur de l'eau Chambre d'hôtes</p>
+                            <p class="prix">Nuit à partir de 71€</p>
+                        </div>
+                        <div class="etoile_droite_2">
+                            <img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-grise.svg" alt="etoile grise">
+                        </div>
+                    </div>
+                    <div class="bloc_hotel_tout_bleu">
+                        <div class="image_hotel_tout_bleu">
+                        </div>
+                        <div class="description_hotel_tout_bleu">
+                            <p class="nom">Hôtel Tout bleu et Blanc</p>
+                            <p class="prix">Nuit à partir de 68€</p>
+                        </div>
+                        <div class="etoile_droite_3">
+                            <img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-grise.svg" alt="etoile grise">
+                        </div>
+                    </div>
+                </aside>
+            </section>
+        <section class="activités">
+                <h2>Activités à Marseille</h2>
+            <div class="les_activites">
+                    <div class="bloc_vieux_port">
+                        <div class="image_vieux_port"></div>
+                        <p>Vieux Port</p>
+                    </div>
+                    <div class="bloc_fort_iles">
+                        <div class="bloc_fort">
+                            <div class="image_fort"></div>
+                            <p>Fort de Pomégues</p>
+                        </div>
+                        <div class="bloc_iles">
+                            <div class="image_iles"></div>
+                            <p> Îles du Frioul</p>
+                        </div>
+                    </div>
+                    <div class="bloc_calanques">
+                        <div class="image_calanques"></div>
+                        <p>Parc National des Calanques</p>
+                    </div>
+                    <div class="bloc_eglise_parc">
+                        <div class="bloc_eglise">
+                            <div class="image_eglise"></div>
+                            <p>Notre-Dame-de-la-Garde</p>
+                        </div>
+                        <div class="bloc_parc">
+                            <div class="image_parc"></div>
+                            <p>Parc Longchamps</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
