@@ -16,7 +16,7 @@
 {
     font-family: Raleway-VariableFont_wghts;
     width: 90%;
-    margin: auto
+    margin: auto;
 }
 
 /* Mise en page du header*/
@@ -380,29 +380,27 @@ input:checked + .slider_A:before
 }
 /*Mise en page de la section information*/
 
-.information img
+.info img
 {
     height: 15px;
     width: 15px;
     border: 2px solid #F2F2F2;
     border-radius: 34px;
     padding: 2px;
-    margin-bottom: 10px
 }
 
-.information
+.info
 {
     display: flex;
-    align-items: center;
+    align-items:center;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.information h4
+.info h4
 {
     font-size: 0.8em;
     margin-left: 5px;
-    margin-bottom: 10px;
 }
 
 /*Mise en page section hébergement*/
@@ -440,7 +438,6 @@ input:checked + .slider_A:before
     font-size: 1em;
     font-weight: bold;
     padding-left: 30px;
-    border: blue;
 }
 
 .hebergements a
@@ -698,18 +695,18 @@ input:checked + .slider_A:before
 
 .les_plus_populaires
 {   flex:2;
-    border: solid red;
+    display: flex;
+    flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 15px;
     margin-left: 30px;
+    
 }
 
 .titre_populaires
 {
     display: flex;
-    justify-content: space-between;
-    border: solid blue;
-    
+    justify-content: space-between;    
 }
 
 .titre_populaires a
@@ -734,8 +731,8 @@ input:checked + .slider_A:before
 .bloc_hotel_le_soleil_du_matin
 {
     display: flex;
-    height: 140px;
-    width: 300px;
+    height: 120px;
+    width: 280px;
     background-color: white;
     border-radius: 15px;
     margin-left: 30px;
@@ -746,8 +743,8 @@ input:checked + .slider_A:before
 .image_hotel_le_soleil_du_matin
 {
     display:flex;
-    height: 132px;
-    width: 130px;
+    height: 112px;
+    width: 110px;
     border-radius: 15px 0px 0px 15px;
     background-image: url('images/hebergements/3_medium/hotel_le_soleil_du_matin_4.jpg');
     background-repeat: no-repeat;
@@ -782,7 +779,6 @@ input:checked + .slider_A:before
 {
     font-size: 0.8em;
     margin-top: -10px;
-
 }
 
 .etoile_droite
@@ -790,5 +786,292 @@ input:checked + .slider_A:before
     display: flex;
     width: 15px;
     height: 10px;
-    margin-top: 50px;
+    margin-top: 35px;
 }
+
+.bloc_au_coeur_deleau
+{
+    display: flex;
+    height: 120px;
+    width: 280px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+.image_au_coeur_deleau
+{
+    display:flex;
+    height: 112px;
+    width: 110px;
+    border-radius: 15px 0px 0px 15px;
+    background-image: url('images/hebergements/3_medium/Au_coeur_deleau_3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color:red;
+}
+
+.description_au_coeur_deleau
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.etoile_droite_3
+{
+    display: flex;
+    height: 10px;
+    width: 15px;
+}
+
+.bloc_hotel_tout_bleu
+{
+    display: flex;
+    height: 120px;
+    width: 280px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+.activités
+{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.activités h2
+{
+    font-size: 1em;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+.les_activites
+{
+    display: flex;
+    justify-content: space-between;
+    height: 370px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.bloc_vieux_port
+{
+    width: 256px;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: -2px 1px 6px 4px #e0dede
+}
+
+.image_vieux_port
+{
+    width: 256px;
+    height: 300px;
+    background: url('images/activites/3_medium/vieux_port_2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.bloc_vieux_port p
+{
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.bloc_fort_iles
+{
+    margin-left: 30px;
+    width: 256px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bloc_fort
+{
+    height: 186px;
+    width: 256px;
+    border-radius: 15px;
+    box-shadow: -2px 1px 6px 4px #e0dede;
+}
+
+.image_fort
+{
+    width: 256px;
+    height: 146px;
+    background: url('images/activites/3_medium/fort_2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.bloc_fort p
+{
+padding-left: 15px;
+padding-bottom: 5px;
+}
+
+.bloc_iles
+{
+    box-shadow: -2px 1px 6px 4px #e0dede;
+    border-radius: 15px;
+    width: 256px;
+    height: 134px;
+    margin-top: 30px;
+}
+
+.image_iles
+{
+    height: 96px;
+    width: 256px;
+    background: url('images/activites/3_medium/iles_2.jpg');
+    background-repeat:no-repeat;
+    background-size: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.bloc_fort_iles p
+{
+    Padding-left: 15px;
+}
+
+.bloc_calanques
+{
+    margin-left: 30px;
+    width: 256px;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: -2px 1px 6px 4px #e0dede;
+}
+
+.image_calanques
+{
+    width: 256px;
+    height: 300px;
+    background: url('images/activites/3_medium/calanques.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.bloc_calanques p
+{
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+
+.bloc_eglise_parc
+{
+    margin-left: 30px;
+    width: 256px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bloc_eglise
+{
+    height: 160px;
+    width: 256px;
+    border-radius: 15px;
+    box-shadow: -2px 1px 6px 4px #e0dede;
+}
+
+.image_eglise
+{
+    width: 256px;
+    height: 120px;
+    background: url('images/activites/3_medium/eglise_2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.bloc_eglise p
+{
+    padding-left: 15px;
+}
+
+.bloc_parc
+{
+    height: 160px;
+    width: 256px;
+    border-radius: 15px;
+    box-shadow: -2px 1px 6px 4px #e0dede;
+    margin-top: 30px;
+}
+
+.image_parc
+{
+    width: 256px;
+    height: 120px;
+    background: url('images/activites/3_medium/parc_2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.bloc_parc p
+{
+    padding-left: 15px;
+}
+
+footer
+{
+    margin-top: 30px;
+    font-family: Raleway-VariableFont_wghts;
+    background-color: #F2F2F2;
+    display: flex;
+}
+
+
+footer h4
+{
+    font-size: 0.8em;
+    line-height: 1em;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: black;
+    font-size:0.6em;
+    font-weight: normal;
+}
+
+.A_propos
+{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5em;
+    margin-left: 60px;
+}
+
+.Nos_hebergements
+{
+    display:flex;
+    flex-direction: column;
+    line-height: 1.5em;
+    margin-left: 300px;
+}
+
+.Assistance
+{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5em;
+    margin-left: 300px;
+}
+
+
+
+
