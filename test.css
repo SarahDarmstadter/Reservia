@@ -1,0 +1,118 @@
+/*test mise en page avec un background*/
+
+
+
+.hebergements
+{
+    width: 660px;
+    display: flex;
+    background-color: #250303;
+    border-radius: 15px;
+}
+
+.bloc_cannebiere
+{
+    width: 200px;
+    height:150px;
+    background-color: white;
+    border-radius: 15px;
+    line-height: 0.6em;
+}
+
+.image_auberge_de_la_cannebiere
+{
+    position: relative;
+    width: 198px;
+    height: 90px;
+    overflow: hidden;
+    border-radius: 15px 15px 0px 0px;
+    background-color: white;
+    
+}
+
+.image_auberge_de_la_cannebiere img
+{
+    position: absolute;
+    padding: 4px;
+    width: 198px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.etoile img
+{
+    width: 15px;
+    height: 10px;
+}
+
+/*pourquoi font-size ne s'applique pas correctement ?
+*/
+.description_cannebiere .nom
+{
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-left: 4px;
+}
+
+
+.slider_E
+{
+    position: relative;
+    margin-left: 45px;
+    width:150px;
+    height: 39px;
+    cursor: pointer;
+    transition: all .2s;
+    border: 2px solid #F2F2F2;
+    border-radius: 34px;
+    padding-right: 10px;
+    Padding-left: 25px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size:1em;
+}
+
+.slider_E:hover
+{
+    background-color: #F2F2F2;
+}
+
+.switch_E input
+{
+    display: none;
+}
+
+.slider_E:before
+{
+    position: absolute;    
+    transition: all .2s;
+    content:"";
+    height: 38px;
+    width: 38px;
+    Border-radius: 34px;
+    top: -2.5px;
+    left:-4px;
+    background: url('images/money_bleu.svg') no-repeat;
+    background-size: 40%;
+    background-color:  #DEEBFF;
+    background-position: center;
+}
+
+input:checked + .slider_E
+{
+    background-color: #0065FC;
+    color: white;
+    padding-right: 40px;
+}
+
+input:checked + .slider_E:before
+{
+    transform: translateX(116px) ;
+}
+
+
+
+
+
+
