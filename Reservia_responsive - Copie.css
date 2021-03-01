@@ -10,11 +10,7 @@ rendre responsive
 2. comment afficher un hover à "afficher plus" ?
 3. pourquoi ma page ne descend pas sur l'hebergement quand je clique sur le menu ?
 4. questions sur les toggle switch romantique et animaux
-
-
-
 */
-
 
 
 /* Définition d'une nouvelle police nommée Raleway-VariableFont_wghts */
@@ -47,10 +43,6 @@ rendre responsive
   }
 
   
-  .haut_de_page nav
-  {
-      padding-top: 25px;
-  }
   
   .haut_de_page nav ul
   {
@@ -438,6 +430,7 @@ rendre responsive
       flex-wrap: wrap;
       width: 710px;
       height: 450px;
+     
   }
   
   .hebergements
@@ -1099,6 +1092,57 @@ rendre responsive
   }
   
   
+/*Mise en place du responsive*/
+
+@media all and (max-width: 1024px)
+{
+    #bloc_page
+    {
+        width: auto;
+        size: 50%;
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
   
   
   

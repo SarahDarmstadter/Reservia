@@ -9,12 +9,8 @@ rendre responsive
 1. comment afficher le "s'inscrire en bleu ?"
 2. comment afficher un hover à "afficher plus" ?
 3. pourquoi ma page ne descend pas sur l'hebergement quand je clique sur le menu ?
-4. questions sur les toggle switch romantique et animaux
-
-
-
+4. questions sur les toggle switch romantique et animaux et meme question pour le responsive********************
 */
-
 
 
 /* Définition d'une nouvelle police nommée Raleway-VariableFont_wghts */
@@ -47,10 +43,6 @@ rendre responsive
   }
 
   
-  .haut_de_page nav
-  {
-      padding-top: 25px;
-  }
   
   .haut_de_page nav ul
   {
@@ -438,6 +430,7 @@ rendre responsive
       flex-wrap: wrap;
       width: 710px;
       height: 450px;
+     
   }
   
   .hebergements
@@ -1099,6 +1092,135 @@ rendre responsive
   }
   
   
+/*Mise en place du responsive - ORDINATEUR*/
+
+@media all and (max-width: 1024px)
+{
+    #bloc_page
+    {
+        width: auto;
+    }
+
+    .haut_de_page nav li
+    {
+        margin-left: 10px;
+    }
+    
+    .filtre_hebergement
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .slider_E
+  {
+    margin-left: 23px;
+    width:110px;
+    height: 27px;
+    padding-top: 5px;
+    padding-bottom:4px;
+  }
+
+  .slider_E:before
+  {
+      height: 28px;
+      width: 28px;
+  }
+
+  input:checked + .slider_E
+  {
+      background-color: #0065FC;
+      color: white;
+      padding-right: 40px;
+  }
+
+  input:checked + .slider_E:before
+  {
+      transform: translateX(85px) ;
+  }
+
+  .slider_F
+  {
+      margin-left: 23px;
+      width:80px;
+      height: 27px;
+      padding-top: 5px;
+      padding-bottom: 4px;
+      padding-right: 3px;
+      font-size:0.9em;
+  }
+
+  .slider_F:before
+  {
+      top: -2.2px;
+      Left: -4px;
+      height: 28px;
+      width: 28px;
+  }
+
+  input:checked + .slider_F:before
+  {
+      transform: translateX(54px);
+  }
+
+  input:checked + .slider_F
+  {
+      padding-right: 40px;
+  }
+
+  .slider_R
+  {
+    width:110px;
+    height: 27px;
+    border-radius: 24px;
+    padding-top: 5px;
+    padding-bottom:4px;
+    padding-right: 30px;
+  }
+
+  .slider_R:before
+  {
+      height: 28px;
+      width: 28px;
+      top: -2.2px;
+      Left: -4px;
+  }
+
+  input:checked + .slider_R:before
+  {
+      transform: translateX(84px)
+  }
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
   
   
   
