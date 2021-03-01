@@ -1,14 +1,12 @@
 
 /*
 to do: 
-revoir les ancres du menu
 rendre responsive
 */
 
 /*questions: 
 1. comment afficher le "s'inscrire en bleu ?"
 2. comment afficher un hover à "afficher plus" ?
-3. pourquoi ma page ne descend pas sur l'hebergement quand je clique sur le menu ?
 4. questions sur les toggle switch romantique et animaux
 
 
@@ -64,7 +62,7 @@ rendre responsive
       margin-left: 50px;
   }
   
-  .haut_de_page a
+ a
   {
       text-decoration: none;
       color: black;
@@ -473,9 +471,10 @@ rendre responsive
       font-weight: normal;
   }
 
-  .afficher_plus a:hover
+  .afficher_plus:hover
   {
-      text-decoration: 2px underline black;
+      border-bottom: 2px solid black;
+      /* A remonter à  la main*/
   }
 
   .les_hebergements .nom
