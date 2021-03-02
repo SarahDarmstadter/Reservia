@@ -1,7 +1,16 @@
 
+/*Définition du media queries*/
 /* Définition d'une nouvelle police nommée Raleway-VariableFont_wghts */
 
-*, *:after, *:before {
+
+
+
+@media (min-width: 768px)
+{
+
+
+*, *:after, *:before
+ {
     box-sizing: border-box;
   }
   
@@ -618,19 +627,12 @@
   }
 
  
- 
-
-  
-  
-  
-  
-   
 
 /*Mise en page bloc activités*/
 
   #activités
   {
-     margin-top: 30px;
+     margin-top: 20px;
       height: 400px;
       display: flex;
       flex-direction: column;
@@ -844,8 +846,7 @@
       line-height: 1.5em;
       margin-left: 300px;
   }
-  
-  
+}
   
   
   
