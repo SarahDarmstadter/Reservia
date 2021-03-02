@@ -1,20 +1,4 @@
 
-/*
-to do: 
-rendre responsive
-*/
-
-/*questions: 
-1. comment afficher le "s'inscrire en bleu ?"
-2. comment afficher un hover à "afficher plus" ?
-4. questions sur les toggle switch romantique et animaux
-
-
-
-*/
-
-
-
 /* Définition d'une nouvelle police nommée Raleway-VariableFont_wghts */
 
 *, *:after, *:before {
@@ -293,11 +277,10 @@ rendre responsive
       font-size: 01em;
       padding-top: 11px;
       padding-bottom: 10px;
-      padding-left: 10px;
       padding-right: 10px;
-      width: 150px;
+      width: 140px;
       height: 39px;
-      Padding-left: 45px;
+      Padding-left: 40px;
   }
   
   .slider_R:hover
@@ -327,21 +310,20 @@ rendre responsive
   }
   
   
-  /*Même prblème, le texte ne se décale pas malgré le padding que je lui applique*/
+ 
   input:checked + .slider_R
   {
       background-color:#0065FC;
       color: white;
-      padding-right: 20px;
+      padding-left: 30px;
   }
   
   input:checked + .slider_R:before
   {
-      transform: translateX(122px)
+      transform: translateX(112px)
   }
   
   /*Mise en page du filtre Animaux*/
-  /*Le texte ne bouge pas comme pour economique et familiale pourquoi?*/
   
   .slider_A
   {
@@ -353,7 +335,7 @@ rendre responsive
       padding-bottom: 10px;
       border: 2px solid #F2F2F2;
       border-radius: 34px;
-      width: 192px;
+      width: 182px;
       height: 39px;
       text-align: center;
       font-weight: bold;
@@ -390,11 +372,12 @@ rendre responsive
   {
       background-color: #0065FC;
       color: white;
+      padding-right: 30px;
   }
   
   input:checked + .slider_A:before
   {
-      transform: translateX(164px)
+      transform: translateX(145px)
   }
   /*Mise en page de la section information*/
   
@@ -427,35 +410,33 @@ rendre responsive
   {
       display: flex;
   }
- 
-  .les_hebergements
-  {
-     
-      flex: 1;
-      display: flex;
-      flex-wrap: wrap;
-      width: 710px;
-      height: 450px;
-  }
   
-  .hebergements
+  .bloc_hebergements
   {
       height: 500px;
       width: 735px;
       background-color: #F2F2F2;
       border-radius: 15px;
       padding-top: 10px;
-      }
+ }
   
-  .hebergements h3
+  .bloc_hebergements h3
   {
       font-size: 1em;
       font-weight: bold;
       padding-left: 30px;
       margin-bottom: 40px;
   }
+
+  .liste_des_hebergements
+  {
+      display: flex;
+      flex-wrap: wrap;
+      width: 710px;
+      height: 450px;
+  }
   
-  .les_hebergements a
+  .liste_des_hebergements a
   {   
       text-decoration: none;
       font-size: 0.9em;
@@ -474,19 +455,15 @@ rendre responsive
   .afficher_plus:hover
   {
       border-bottom: 2px solid black;
-      /* A remonter à  la main*/
+      padding-bottom: -155px; /* a corriger*/
   }
 
-  .les_hebergements .nom
+  .liste_des_hebergements .nom
   {
       font-weight: bold;
       font-size: 0.9em;
   }
-
-  .les_hebergements .prix
-  {
-      font-size: 0.8em;
-  }
+3
 
   .clic
   {
@@ -495,25 +472,25 @@ rendre responsive
       color: black;
   }
   
-  .etoile
+  .etoiles_bloc_droit
   {
     display: flex;
     width: 30px;
   }
 
-  .etoile img
+  .etoiles_bloc_droit img
   {
     height: 10px;
     width: 15px;
   }
-  .clic .etoile
+  .clic .etoiles_bloc_droit
   {
     position: absolute;
     margin-left: 15px;
     margin-top: -15px;
   }
 
-  .bloc_cannebiere
+  .bloc_blanc_droit
   {
     display: flex;
     flex-direction: column;
@@ -524,7 +501,7 @@ rendre responsive
     box-shadow: -2px 1px 6px 4px #e0dede;
   }
   
-  .bloc_cannebiere img
+  .bloc_blanc_droit img
   {
       position: absolute;
       width: 197px;
@@ -535,190 +512,28 @@ rendre responsive
       margin-left: 4px; 
   }
   
-  .description_cannebiere
+  .description_bloc_droit
   {
       position: absolute;
       margin-left: 15px;
       margin-top: 100px;
       line-height: 0.4em;
-  }
-  
-  /* Mise en page bloc hotel du port */
-  
-  .bloc_hotel_du_port
-  {
-    display: flex;
-    flex-direction: column;
-    width: 205px;
-    height: 165px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: -2px 1px 6px 4px #e0dede;
-  }
-  
-  .bloc_hotel_du_port img
-  {
-      position: absolute;
-      width: 197px;
-      height: 95px;
-      border-radius: 15px 15px 0px 0px;
-      margin-top: 4px;
-      margin-right: 4px;
-      margin-left: 4px; 
-  }
-  
-  .description_hotel_du_port
-  {
-      position: absolute;
-      margin-left: 15px;
-      margin-top: 100px;
-      line-height: 0.4em;
-  }
-  
-  /* Mise en page bloc hotel Les mouettes */
-  
-  .bloc_hotel_les_mouettes
-  {
-    display: flex;
-    flex-direction: column;
-    width: 205px;
-    height: 165px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: -2px 1px 6px 4px #e0dede;
-  }
-  
-  .bloc_hotel_les_mouettes img
-  {
-      position: absolute;
-      width: 197px;
-      height: 95px;
-      border-radius: 15px 15px 0px 0px;
-      margin-top: 4px;
-      margin-right: 4px;
-      margin-left: 4px; 
-  }
-  
-  .description_hotel_les_mouettes
-  {
-      position: absolute;
-      margin-left: 15px;
-      margin-top: 100px;
-      line-height: 0.4em;
-  }
-  
-
-  /*Mise en page du bloc hotel de la mer*/
-  
-  .bloc_hotel_de_la_mer
-  {
-    display: flex;
-    flex-direction: column;
-    width: 205px;
-    height: 165px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: -2px 1px 6px 4px #e0dede;
-  }
-  
-  .bloc_hotel_de_la_mer img
-  {
-      position: absolute;
-      width: 197px;
-      height: 95px;
-      border-radius: 15px 15px 0px 0px;
-      margin-top: 4px;
-      margin-right: 4px;
-      margin-left: 4px; 
-  }
-  
-  .description_hotel_de_la_mer
-  {
-      position: absolute;
-      margin-left: 15px;
-      margin-top: 100px;
-      line-height: 0.4em;
-  }
-
-  /*Mise en page bloc auberge du panier*/
-  
-  .bloc_auberge_le_panier
-  {
-    display: flex;
-    flex-direction: column;
-    width: 205px;
-    height: 165px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: -2px 1px 6px 4px #e0dede;
-  }
-  
-  .bloc_auberge_le_panier img
-  {
-    position: absolute;
-    width: 197px;
-    height: 95px;
-    border-radius: 15px 15px 0px 0px;
-    margin-top: 4px;
-    margin-right: 4px;
-    margin-left: 4px; 
-  }
-  
-  .description_auberge_le_panier
-  {
-    position: absolute;
-    margin-left: 15px;
-    margin-top: 100px;
-    line-height: 0.4em;
-  }
-  
-  /*Mise en page bloc hotel chez Amina*/
-  
-  .bloc_hotel_chez_amina
-  {
-    display: flex;
-    flex-direction: column;
-    width: 205px;
-    height: 165px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: -2px 1px 6px 4px #e0dede;
-  }
-  
-  .bloc_hotel_chez_amina img
-  {
-    position: absolute;
-    width: 197px;
-    height: 95px;
-    border-radius: 15px 15px 0px 0px;
-    margin-top: 4px;
-    margin-right: 4px;
-    margin-left: 4px;  
-  }
-  
-  .description_hotel_chez_amina
-  {
-    position: absolute;
-    margin-left: 15px;
-    margin-top: 100px;
-    line-height: 0.4em;
   }
   
   /*Mise en page bloc droit*/
-  
 
-  .les_plus_populaires .nom
+  .bloc_populaires .nom
   {
       font-size: 0.8em;
       font-weight: bold;
   }
 
-  .les_plus_populaires .prix
+  .bloc_populaires .prix
   {
       font-size: 0.7em;
   }
 
-  .les_plus_populaires
+  .bloc_populaires
   {   flex:2;
       display: flex;
       flex-direction: column;
@@ -727,13 +542,13 @@ rendre responsive
       margin-left: 30px;
   }
   
-  .titre_populaires
+  .titre_bloc_populaires
   {
       display: flex;
       justify-content: space-between;    
   }
   
-  .titre_populaires a
+  .titre_bloc_populaires a
   {
       font-size: 01em;
       font-weight:bold;
@@ -744,14 +559,14 @@ rendre responsive
       margin-left: 30px;
   }
   
-  .titre_populaires img
+  .titre_bloc_populaires img
   {
       width: 5%;
       margin-right: 30px;
       align-self:flex-end;
   }
   
-  .bloc_hotel_le_soleil_du_matin
+  .bloc_blanc_gauche
   {
     display: flex;
     height: 120px;
@@ -764,7 +579,7 @@ rendre responsive
     box-shadow: -2px 1px 6px 4px #e0dede;
   }
   
-  .bloc_hotel_le_soleil_du_matin img
+  .bloc_blanc_gauche img
 {
     position: absolute;
     height: 112px;
@@ -775,7 +590,7 @@ rendre responsive
     margin-bottom: 4px;
 }
   
-  .description_hotel_le_soleil_du_matin
+  .description_bloc_gauche
   { 
     display: flex;
     flex-direction: column;
@@ -783,14 +598,18 @@ rendre responsive
     width: 130px;
     margin-left: 125px;
   }
-
-  .rating img
+  .description_description_bloc_gauche .prix
+  {
+      margin-top: -8px;
+  }
+  
+  .etoiles_bloc_gauche img
   {
     height:10px;
     width: 15px;
   }
 
-  .rating
+  .etoiles_bloc_gauche
   {
       display: flex;
       width: 30px;
@@ -798,85 +617,14 @@ rendre responsive
       margin-top: -20px;
   }
 
-  .description_hotel_le_soleil_du_matin .prix
-  {
-      margin-top: -8px;
-  }
-  
-  .bloc_au_coeur_deleau
-  {
-    display: flex;
-    height: 120px;
-    width: 280px;
-    background-color: white;
-    border-radius: 15px;
-    margin-left: 30px;
-    margin-right:30px;
-    margin-top: 30px;
-    box-shadow: -2px 1px 6px 4px #e0dede;
-  }
-  
-  .bloc_au_coeur_deleau img
-  {
-    position: absolute;
-    height: 112px;
-    width: 110px;
-    border-radius: 15px 0px 0px 15px;
-    margin-top: 4px;
-    margin-left: 4px;
-    margin-bottom: 4px;
-  }
-  
-  .description_au_coeur_deleau
-  {
-      display: flex;
-      flex-direction: column;
-      margin-left: 125px;
-  }
+ 
+ 
 
-  .description_au_coeur_deleau .prix
-  {
-      margin-top: -8px;
-     margin-left: 1px;
-  }
   
   
-  .bloc_hotel_tout_bleu
-  {
-      display: flex;
-      height: 120px;
-      width: 290px;
-      background-color: white;
-      border-radius: 15px;
-      margin-left: 30px;
-      margin-right: 30px;
-      margin-top: 30px;
-      box-shadow: -2px 1px 6px 4px #e0dede;
-  }
   
-  .bloc_hotel_tout_bleu img
-  {
-    position: absolute;
-    height: 112px;
-    width: 110px;
-    border-radius: 15px 0px 0px 15px;
-    margin-top: 4px;
-    margin-left: 4px;
-    margin-bottom: 4px; 
-  }
-
-  .description_hotel_tout_bleu
-  {
-      display: flex;
-      flex-direction: column;
-      margin-left: 125px;
-      width: 130px;
-  }
-
-  .description_hotel_tout_bleu .prix
-  {
-      margin-top: -8px;
-  }
+  
+   
 
 /*Mise en page bloc activités*/
 

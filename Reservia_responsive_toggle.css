@@ -9,7 +9,7 @@ rendre responsive
 1. comment afficher le "s'inscrire en bleu ?"
 2. comment afficher un hover à "afficher plus" ?
 3. pourquoi ma page ne descend pas sur l'hebergement quand je clique sur le menu ?
-4. questions sur les toggle switch romantique et animaux
+4. questions sur les toggle switch romantique et animaux et meme question pour le responsive********************
 */
 
 
@@ -277,21 +277,21 @@ rendre responsive
   
   .slider_R
   {
-      position: relative;
-      display:block;
-      margin-left: 45px;
-      cursor: pointer;
-      border: 2px solid #F2F2F2;
-      border-radius: 34px;
-      font-weight: bold;
-      font-size: 01em;
-      padding-top: 11px;
-      padding-bottom: 10px;
-      padding-left: 10px;
-      padding-right: 10px;
-      width: 150px;
-      height: 39px;
-      Padding-left: 45px;
+    position: relative;
+    display: block;
+    margin-left: 45px;
+    width:130px;
+    height: 39px;
+    cursor: pointer;
+    transition: all .2s;
+    border: 2px solid #F2F2F2;
+    border-radius: 34px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size:1em;
   }
   
   .slider_R:hover
@@ -1092,44 +1092,171 @@ rendre responsive
   }
   
   
-/*Mise en place du responsive*/
+/*Mise en place du responsive - ORDINATEUR*/
 
 @media all and (max-width: 1024px)
 {
     #bloc_page
     {
         width: auto;
-        size: 50%;
     }
 
+    header h1
+    {
+        font-size: 0.9em;
+    }
+
+    header h2 
+    {
+        font-size: 0.8em;
+    }
+
+    .haut_de_page nav li
+    {
+        margin-left: 10px;
+        font-size: 0.9em;
+    }
     
+    .filtre_hebergement
+    {
+        width: auto;
+    }
+
+    .slider_E
+    {
+        margin-left: 10px;
+        margin-top: 6px;
+        width:115px;
+        height: 24px;
+        border-radius: 34px;
+        padding-right: 15px;
+        Padding-left: 25px;
+        padding-top: 5px;
+        padding-bottom: 4x;
+        font-size: 0.8em;
+    }
+    
+    .slider_E:before
+    {
+        height: 25px;
+        width: 25px;
+    }
+    
+    input:checked + .slider_E:before
+    {
+        transform: translateX(92px);
+    }
+
+    input:checked + .slider_E:before
+    {
+        padding-right: 25px;
+    }
+    
+    .slider_F
+    {
+        margin-left: 10px;
+        margin-top: 6px;
+        width:80px;
+        height: 24px;
+        padding-top: 5px;
+        padding-bottom: 4px;
+        padding-left: 10px;
+        font-size:0.8em;
+    }
+    
+    .slider_F:before
+    {
+        height: 25px;
+        width: 25px;
+    }
+    
+    input:checked + .slider_F:before
+    {
+        transform: translateX(56px);
+    }
+    
+    .slider_R
+    {
+        margin-top: 6px;
+        font-size: 0.8em;
+        padding-top: 5px;
+        padding-bottom: 4px;
+        padding-right: 10px;
+        width: 100px;
+        height: 24px;
+        Padding-left: 20px;
+    }
+    
+    .slider_R:before
+    {
+        height: 25px;
+        width: 25px;
+    }
+    
+    input:checked + .slider_R
+    {
+        background-color:#0065FC;
+        color: white;
+        padding-left: 10px;
+    }
+    
+    input:checked + .slider_R:before
+    {
+        transform: translateX(82px)
+    }
+       
+    .slider_A
+    {
+        margin-top: 6px;
+        padding-top: 5px;
+        padding-bottom: 4px;
+        width: 132px;
+        height: 24px;
+        font-size: 0.8em;
+    }
+    
+    .slider_A:hover
+    {
+        background-color:#F2F2F2;
+    }
+    
+    .switch_A input
+    {
+        display: none;
+    }
+    
+    .slider_A:before
+    {
+        height: 25px;
+        width: 25px;
+    }
+    
+    input:checked + .slider_A
+    {
+        background-color: #0065FC;
+        color: white;
+        padding-right: 25px;
+    }
+    
+    input:checked + .slider_A:before
+    {
+        transform: translateX(108px)
+    }
+   
 
 
+    .les_hebergements
+    {
+        width: auto;
+    }
+  
+    .hebergements
+    {
+        max-width: 40%;
+    }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 
 
