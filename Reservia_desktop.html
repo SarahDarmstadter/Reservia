@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel=stylesheet href="Reservia_desktop.css">
      <script src="https://kit.fontawesome.com/b6c58def4c.js" crossorigin="anonymous"></script>
     <title>Reservia deuxième méthode</title>
@@ -13,9 +14,11 @@
                     <img src="images/logo/Reservia.svg" alt="logo reservia">
                     <nav>
                     <ul>
-                        <li><a href="#bloc_vertical">Hébergements</a></li>
-                        <li><a href="#activités">Activités</a></li>
                         <li><a class="inscription" href="#">S'inscrire</a></li>
+                        <div class="nav_mobile">
+                        <li><a href="#activités">Activités</a></li>
+                        <li><a href="#bloc_vertical">Hébergements</a></li>
+                        </div>
                     </ul>
                     </nav>
                 </div>
@@ -55,9 +58,10 @@
         
             <section class="information">
                 <div class="info">
-                    <img src="images/info-solid.svg" alt="information" /> <h4>Plus de 500 logements disponibles dans cette ville</h4>
+                    <img src="images/info-solid.svg" alt="information" /><h4>Plus de 500 logements disponibles dans cette ville</h4>
                 </div>
             </section>
+            
             <section id="bloc_vertical" class="bloc_vertical">
                 <div class="bloc_hebergements">
                     <h3>Hébergements à Marseille</h3>

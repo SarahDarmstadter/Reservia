@@ -5,8 +5,7 @@
 
 
 
-@media (min-width: 768px)
-{
+
 
 
 *, *:after, *:before
@@ -37,7 +36,6 @@
       align-items: flex-end;
   }
 
-  
   .haut_de_page nav
   {
       padding-top: 25px;
@@ -46,7 +44,7 @@
   .haut_de_page nav ul
   {
       display: flex;
-      flex-direction: row;
+      flex-direction: row-reverse;
       list-style-type: none;
   }
   
@@ -318,7 +316,6 @@
       background-color: #DEEBFF;
   }
   
-  
  
   input:checked + .slider_R
   {
@@ -472,7 +469,6 @@
       font-weight: bold;
       font-size: 0.9em;
   }
-3
 
   .clic
   {
@@ -543,7 +539,7 @@
   }
 
   .bloc_populaires
-  {   flex:2;
+  { 
       display: flex;
       flex-direction: column;
       background-color: #F2F2F2;
@@ -582,7 +578,7 @@
     width: 280px;
     background-color: white;
     border-radius: 15px;
-    margin-left: 30px;
+    margin-left: 35px;
     margin-right: 30px;
     margin-top: 20px;
     box-shadow: -2px 1px 6px 4px #e0dede;
@@ -846,7 +842,44 @@
       line-height: 1.5em;
       margin-left: 300px;
   }
+
+
+
+
+@media (max-device-width: 620px)
+{
+
+
+
+.haut_de_page img 
+{
+    width: 160px;
+    align-self: flex-start;
+    padding-top: 20px;
 }
-  
+
+.haut_de_page
+{display: flex;
+}
+
+.nav_mobile
+{
+    margin-top: 80px;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
   
   
