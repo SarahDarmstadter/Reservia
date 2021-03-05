@@ -1,0 +1,665 @@
+
+/*
+
+1. Comment faire pour que lorsque je réduis la fenetre, le afficher reste en bas et ne vienne pas sur le coté ? 
+
+
+
+
+*/
+
+
+
+/* Définition d'une nouvelle police nommée Raleway-VariableFont_wghts */
+
+*, *:after, *:before
+ {
+    box-sizing: border-box;
+  }
+  
+  
+  @font-face 
+  { 
+      font-family: 'Raleway-VariableFont_wghts';
+      src: url('police/Raleway-VariableFont_wght.ttf') format('truetype');
+  }
+  
+  /*Mise en place de la police et application d'une largeur de 98% de l'écran*/
+  .bloc_page
+  {
+      font-family: Raleway-VariableFont_wghts;
+      width: 90%;
+      margin: auto;
+  }
+  
+  /* Mise en page du header*/
+  .haut_de_page
+  {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+  }
+
+  .nav_mobile
+  {
+      display: flex;
+  }
+  .haut_de_page nav
+  {
+      padding-top: 25px;
+  }
+  
+  .haut_de_page nav ul
+  {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+  }
+  
+  .haut_de_page nav li
+  {
+      margin-left: 50px;
+  }
+ a
+  {
+      text-decoration: none;
+      color: black;
+      font-size: 0.9em;
+  }
+  
+  .haut_de_page nav a:hover
+  {
+      box-sizing: content-box;
+      width: 100%;
+      border-top: 2px solid #0065FC;
+      padding: 20px;
+      color:#0065FC
+  }
+  
+  .inscription 
+  {
+      font-weight: bold;
+      color: #0065FC;
+  }
+
+  .texte 
+  {
+      line-height: 0.8em;
+      margin-top: 20px;
+  }
+      
+  .texte h1
+  {
+      font-size: 1em;
+  }
+  
+  .texte h2
+  {
+      Font-size: 0.9em;
+      font-weight: normal;
+  }
+  
+ 
+  
+  /*Mise en page de la section Filtre*/
+  
+  .recherche_ville
+  {
+      display: flex;
+      margin-top: 20px;
+  }
+  
+  .recherche_ville img
+  {
+     background-color: #F2F2F2;
+     padding: 10px 10px 10px 14px;
+     width: 40px;
+     height: 40px;
+     border-radius: 10px 0px 0px 10px;
+  }
+  
+  .search
+  {
+      padding-left: 12px;
+      border-top: 2px solid #F2F2F2;
+      border-bottom: 2px solid #F2F2F2;
+      border-left: none;
+      border-right:none;
+      font-weight: bold;
+      font-size: 0.8em;
+      width: 190px;
+  }
+  
+  
+  /*Pourquoi la taille du texte "rechercher" n'a pas changé?*/
+  .bouton
+  {
+      color: white;
+      font-weight: bold;
+      font-size: 0.8em;   
+      background-color: #0065FC;
+      border-radius: 0% 10px 10px 00%;
+      padding-left: 12px;
+      padding-right: 12px;
+      border: none;
+      cursor: pointer;
+  }
+  
+  .filtre_hebergement
+  {
+      display: flex;
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 0.8em;
+  }
+  
+  .filtre_hebergement h2
+  {
+      font-size: 01em;
+      font-weight: bold;
+  }
+  /*Mise en page du filtre Economique*/
+  
+  .slider_E
+  {
+      position: relative;
+      display:block;
+      margin-left: 45px;
+      width:150px;
+      height: 39px;
+      cursor: pointer;
+      transition: all .2s;
+      border: 2px solid #F2F2F2;
+      border-radius: 34px;
+      padding-right: 10px;
+      Padding-left: 25px;
+      padding-top: 11px;
+      padding-bottom: 10px;
+      text-align: center;
+      font-weight: bold;
+      font-size:1em;
+  }
+  
+  .slider_E:hover
+  {
+      background-color: #F2F2F2;
+  }
+  
+  .switch_E input
+  {
+      display: none;
+  }
+  
+  .slider_E:before
+  {
+      position: absolute;    
+      transition: all .2s;
+      content:"";
+      height: 38px;
+      width: 38px;
+      Border-radius: 34px;
+      top: -2.5px;
+      left:-4px;
+      background: url('images/money_bleu.svg') no-repeat;
+      background-size: 40%;
+      background-color:  #DEEBFF;
+      background-position: center;
+  }
+  
+  input:checked + .slider_E
+  {
+      background-color: #0065FC;
+      color: white;
+      padding-right: 40px;
+  }
+  
+  input:checked + .slider_E:before
+  {
+      transform: translateX(116px) ;
+  }
+  
+  /*Mise en page du filtre Familial*/
+  
+  .slider_F
+  {
+      position: relative;
+      display: block;
+      margin-left: 45px;
+      width:110px;
+      height: 39px;
+      cursor: pointer;
+      transition: all .2s;
+      border: 2px solid #F2F2F2;
+      border-radius: 34px;
+      padding-top: 11px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      text-align: center;
+      font-weight: bold;
+      font-size:1em;
+  }
+  
+  .slider_F:hover
+  {
+      background-color:#F2F2F2;
+  }
+  
+  .switch_F input
+  {
+      display: none;
+  }
+  
+  .slider_F:before
+  {
+      position:absolute;
+      content:"";
+      transition: all .2s;
+      top: -2.5px;
+      Left: -4px;
+      height: 38px;
+      width: 38px;
+      border-radius: 34px;
+      background: url('images/child.svg') no-repeat;
+      background-size: 40%;
+      background-color:  #DEEBFF;
+      background-position: center;
+  }
+  
+  
+  /* Il faut décaler le texte un peu mais je n'y arrive pas avec le padding.*/
+  input:checked + .slider_F
+  {
+      background-color: #0065FC;
+      color: white; 
+      padding-right: 40px;
+  }
+  
+  input:checked + .slider_F:before
+  {
+      transform: translateX(74px);
+  }
+  
+  /*Mise en page du filtre Romantique*/
+  
+  .slider_R
+  {
+      position: relative;
+      display:block;
+      margin-left: 45px;
+      cursor: pointer;
+      border: 2px solid #F2F2F2;
+      border-radius: 34px;
+      font-weight: bold;
+      font-size: 01em;
+      padding-top: 11px;
+      padding-bottom: 10px;
+      padding-right: 10px;
+      width: 140px;
+      height: 39px;
+      Padding-left: 40px;
+  }
+  
+  .slider_R:hover
+  {
+      background-color:#F2F2F2;
+  }
+  
+  .switch_R input
+  {
+      display: none;
+  }
+  
+  .slider_R:before
+  {
+      position: absolute;
+      content:"";
+      transition: all .2s;
+      height: 38px;
+      width: 38px;
+      border-radius: 34px;
+      top: -2.5px;
+      left: -4px;
+      background: url('images/heart-solid.svg') no-repeat;
+      background-size: 40%;
+      background-position: center;
+      background-color: #DEEBFF;
+  }
+  
+ 
+  input:checked + .slider_R
+  {
+      background-color:#0065FC;
+      color: white;
+      padding-left: 30px;
+  }
+  
+  input:checked + .slider_R:before
+  {
+      transform: translateX(112px)
+  }
+  
+  /*Mise en page du filtre Animaux*/
+  
+  .slider_A
+  {
+      position: relative;
+      display: block;
+      margin-left: 45px;
+      padding-top:11px;
+      padding-left: 10px;
+      padding-bottom: 10px;
+      border: 2px solid #F2F2F2;
+      border-radius: 34px;
+      width: 182px;
+      height: 39px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1em;
+  }
+  
+  .slider_A:hover
+  {
+      background-color:#F2F2F2;
+  }
+  
+  .switch_A input
+  {
+      display: none;
+  }
+  
+  .slider_A:before
+  {
+      position: absolute;
+      transition: all .2s;
+      content:"";
+      height: 38px;
+      width: 38px;
+      top: -2.5px;
+      left:-4px;
+      border-radius: 34px;
+      background: url('images/dog-solid.svg') no-repeat;
+      background-size: 40%;
+      background-position: center;
+      background-color: #DEEBFF;
+  }
+  
+  input:checked + .slider_A
+  {
+      background-color: #0065FC;
+      color: white;
+      padding-right: 30px;
+  }
+  
+  input:checked + .slider_A:before
+  {
+      transform: translateX(145px)
+  }
+  /*Mise en page de la section information*/
+  
+  .info img
+  {
+      height: 15px;
+      width: 15px;
+      border: 2px solid #F2F2F2;
+      border-radius: 34px;
+      padding: 2px;
+  }
+  
+  .info
+  {
+      display: flex;
+      align-items:center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  
+  .info h4
+  {
+      font-size: 0.8em;
+      margin-left: 5px;
+  }
+  
+  /*MISE EN PAGE DE LA SECION VERTICALE*/
+  .bloc_vertical
+  {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  }
+
+  /*MISE EN PAGE DU HEBERGEMENTS*/
+
+.bloc_hebergements h3
+{
+    font-weight: bold;
+    font-size: 0.9em;
+    position: relative;
+    left: 35px;
+    margin-top: 30px;
+}
+
+  .bloc_hebergements
+  {
+      width: 65%;
+      background-color: #F2F2F2;
+      border-radius: 15px 15px 15px 15px;
+  }
+
+  .liste_des_hebergements
+  {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    padding-top: 15px;
+  }
+
+  .bloc_blanc_droit
+  {
+    width: 190px;
+    border-radius: 15px 15px 15px 15px;
+    background-color: white;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    padding: 4px;
+    box-shadow: -2px 1px 6px 4px #e0dede;
+  }
+  
+  .bloc_blanc_droit img
+  { height: 95px;
+    width: 100%;
+      border-radius: 15px 15px 0px 0px;
+  }
+
+  .etoiles_bloc_droit
+  {
+      display: flex;
+      width: 12px;
+      height: 10px;
+      padding:0px;
+      position: relative;
+      left: 5px;
+      top:-45px;
+    }
+
+    .bloc_blanc_droit p
+    {
+        line-height: 0.5em;
+        font-size: 0.8em;
+        position: relative;
+        left: 5px;
+        top:-3px;
+    }
+
+  .bloc_blanc_droit .nom
+  {
+      font-weight: bold;
+      font-size: 0.9em;
+
+  }
+
+  .afficher_plus
+  {
+      position: relative;
+      left: 20px;
+      bottom:-20px;
+  }
+
+  .afficher_plus:hover
+  {
+      font-weight:bold;
+  }
+    
+  /*MISE EN PAGE DU BLOC ASIDE - POPULAIRE*/
+
+  .bloc_populaires
+  {
+    background-color:#F2F2F2;
+    margin-left: 30px;
+    max-width: 35%;
+    border-radius: 15px;
+    padding-right: 20px;
+    padding-left: 15px;
+  }
+
+  .titre_bloc_populaires
+  {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+  }
+
+  .bloc_blanc_gauche
+  {
+      background-color: white;
+      width: 260px;
+      border-radius: 15px;
+      margin: 30px;
+      display: flex;
+      padding: 4px;
+      box-shadow: -2px 1px 6px 4px #e0dede;
+
+  }
+
+  .bloc_blanc_gauche img
+  {
+      height: 110px;
+      width: 100px;
+    border-radius: 15px 0px 0px 15px;
+  }
+
+  .description_bloc_gauche p
+  {
+      font-size:0.8em;
+      position: relative;
+      left: 10px;
+  }
+
+  .description_bloc_gauche .nom
+  {
+      font-weight: bold;
+      font-size: 0.9em;
+  }
+
+  .description_bloc_gauche .prix
+  {
+    position: relative;
+    top: -7px;  
+}
+
+  .etoiles_bloc_gauche img
+  {
+    width: 12px;
+    height: 10px;
+    position: relative;
+    bottom:-27px;
+    left: 10px;
+
+  }
+
+  .etoiles_bloc_gauche_milieu img 
+  {
+    width: 12px;
+    height: 10px;
+    position: relative;
+    left: 9px;
+    bottom: -12px;
+  }
+
+
+/*MISE EN PAGE DU BLOC ACTIVITE*/
+
+
+  #activités
+  {
+      margin-top: 30px;
+      width:100%;
+      border: solid green;
+  }
+
+  .les_activites
+  {
+      display: flex;
+      height: 350px;
+  }
+
+.clic_vieux_port
+{
+    width: 25%;
+    border: solid red;
+    margin-right: 30px;
+}
+
+.bloc_fort_iles
+{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+ .clic_fort
+ {
+     width: 100%;
+     height: 200px;
+     border: solid purple;
+ }
+
+ .clic_iles
+ {
+     width: 100%;
+     height: 130px;
+     border: solid blue;
+     margin-top: 30px;
+ }
+
+ .clic_calanques
+ {
+     width: 25%;
+     border: solid green;
+     margin-right: 30px;
+ }
+
+ .bloc_eglise_parc
+{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+ .clic_eglise
+ {
+     width: 100%;
+     border: solid purple;
+ }
+
+ .clic_parc
+ {
+     width: 100%;
+     border: solid blue;
+     margin-top: 30px;
+ }
