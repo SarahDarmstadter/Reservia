@@ -1,11 +1,7 @@
 
 /*
 
-1. Comment faire pour que lorsque je réduis la fenetre, le afficher reste en bas et ne vienne pas sur le coté ? 
-
-
-
-
+1. l'icone populaire a disparu !
 */
 
 
@@ -35,12 +31,13 @@
   /* Mise en page du header*/
   .haut_de_page
   {
+      width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
   }
 
-  .nav_mobile
+  .nav 
   {
       display: flex;
   }
@@ -56,10 +53,11 @@
       list-style-type: none;
   }
   
-  .haut_de_page nav li
+  .haut_de_page nav a
   {
       margin-left: 50px;
   }
+
  a
   {
       text-decoration: none;
@@ -103,6 +101,12 @@
   
   /*Mise en page de la section Filtre*/
   
+  .filtre 
+  {
+      width: 100%;
+  }
+
+
   .recherche_ville
   {
       display: flex;
@@ -148,6 +152,8 @@
   .filtre_hebergement
   {
       display: flex;
+      flex-wrap: wrap;
+      width: 100%;
       margin-top: 20px;
       font-weight: bold;
       font-size: 0.8em;
@@ -453,7 +459,7 @@
     padding-top: 15px;
   }
 
-  .bloc_blanc_droit
+  .bloc_blanc_gauche
   {
     width: 190px;
     border-radius: 15px 15px 15px 15px;
@@ -465,13 +471,13 @@
     box-shadow: -2px 1px 6px 4px #e0dede;
   }
   
-  .bloc_blanc_droit img
+  .bloc_blanc_gauche img
   { height: 95px;
     width: 100%;
       border-radius: 15px 15px 0px 0px;
   }
 
-  .etoiles_bloc_droit
+  .etoiles_bloc_gauche
   {
       display: flex;
       width: 12px;
@@ -482,7 +488,7 @@
       top:-45px;
     }
 
-    .bloc_blanc_droit p
+    .bloc_blanc_gauche p
     {
         line-height: 0.5em;
         font-size: 0.8em;
@@ -491,7 +497,7 @@
         top:-3px;
     }
 
-  .bloc_blanc_droit .nom
+  .bloc_blanc_gauche .nom
   {
       font-weight: bold;
       font-size: 0.9em;
@@ -502,7 +508,7 @@
   {
       position: relative;
       left: 20px;
-      bottom:-20px;
+      bottom:-10px;
   }
 
   .afficher_plus:hover
@@ -516,10 +522,8 @@
   {
     background-color:#F2F2F2;
     margin-left: 30px;
-    max-width: 35%;
     border-radius: 15px;
-    padding-right: 20px;
-    padding-left: 15px;
+    
   }
 
   .titre_bloc_populaires
@@ -533,10 +537,10 @@
     padding-right: 30px;
   }
 
-  .bloc_blanc_gauche
+  .bloc_blanc_droit
   {
       background-color: white;
-      width: 260px;
+      width: 85%;
       border-radius: 15px;
       margin: 30px;
       display: flex;
@@ -545,33 +549,33 @@
 
   }
 
-  .bloc_blanc_gauche img
+  .bloc_blanc_droit img
   {
       height: 110px;
       width: 100px;
     border-radius: 15px 0px 0px 15px;
   }
 
-  .description_bloc_gauche p
+  .description_bloc_droit p
   {
       font-size:0.8em;
       position: relative;
       left: 10px;
   }
 
-  .description_bloc_gauche .nom
+  .description_bloc_droit .nom
   {
       font-weight: bold;
       font-size: 0.9em;
   }
 
-  .description_bloc_gauche .prix
+  .description_bloc_droit .prix
   {
     position: relative;
     top: -7px;  
 }
 
-  .etoiles_bloc_gauche img
+  .etoiles_bloc_droit img
   {
     width: 12px;
     height: 10px;
@@ -581,7 +585,7 @@
 
   }
 
-  .etoiles_bloc_gauche_milieu img 
+  .etoiles_bloc_droit_milieu img 
   {
     width: 12px;
     height: 10px;
@@ -598,25 +602,44 @@
   {
       margin-top: 30px;
       width:100%;
-      border: solid green;
   }
 
   .les_activites
   {
       display: flex;
-      height: 350px;
+      flex-wrap: wrap;
+      font-size: 0.8em;
+      font-weight: bold;
+  }
+
+  .les_activites p
+  {
+      font-size: 0.8em;
+      font-weight: bold;
+      margin-left: 10px;
+      padding-top: 5px;
   }
 
 .clic_vieux_port
 {
-    width: 25%;
-    border: solid red;
+    width: 250px;
+    height: 350px;
+
+    border-radius: 15px;
     margin-right: 30px;
+    box-shadow: -2px 1px 6px 4px #F2F2F2;
+}
+
+.clic_vieux_port img 
+{
+    width: 100%;
+    height: 300px;
+    border-radius : 15px 15px 0px 0px;
 }
 
 .bloc_fort_iles
 {
-    width: 25%;
+    width: 250px;
     display: flex;
     flex-direction: column;
     margin-right: 30px;
@@ -625,28 +648,51 @@
  .clic_fort
  {
      width: 100%;
-     height: 200px;
-     border: solid purple;
- }
+     height: 190px;
+     box-shadow: -2px 1px 6px 4px #F2F2F2;
+     border-radius: 15px;
+    }
 
- .clic_iles
+ .clic_fort img
  {
      width: 100%;
+     height: 140px;
+     border-radius : 15px 15px 0px 0px;
+
+ }
+ .clic_iles
+ {   width: 250px;
      height: 130px;
-     border: solid blue;
+     box-shadow: -2px 1px 6px 4px #F2F2F2;
+     border-radius: 15px;
      margin-top: 30px;
+ }
+
+ .clic_iles img
+ {
+     width: 100%;
+     height: 80px;
+     border-radius : 15px 15px 0px 0px;
  }
 
  .clic_calanques
  {
-     width: 25%;
-     border: solid green;
+     width: 250px;
+     box-shadow: -2px 1px 6px 4px #F2F2F2;
+     border-radius: 15px;
      margin-right: 30px;
+ }
+
+ .clic_calanques img
+ {
+    width: 100%;
+    height: 300px;
+    border-radius : 15px 15px 0px 0px;
  }
 
  .bloc_eglise_parc
 {
-    width: 25%;
+    width: 250px;
     display: flex;
     flex-direction: column;
 }
@@ -654,12 +700,216 @@
  .clic_eglise
  {
      width: 100%;
-     border: solid purple;
+     height: 160px;
+     box-shadow: -2px 1px 6px 4px #F2F2F2;
+     border-radius: 15px;
+ }
+
+ .clic_eglise img
+ {
+    width: 100%;
+    height: 110px;
+    border-radius : 15px 15px 0px 0px;
  }
 
  .clic_parc
  {
-     width: 100%;
-     border: solid blue;
+    width: 100%;
+    height: 160px;
+    box-shadow: -2px 1px 6px 4px #F2F2F2;
+    border-radius: 15px;
+    margin-top: 30px;
+ }
+
+ .clic_parc img
+ {
+    width: 100%;
+    height: 110px;
+    border-radius : 15px 15px 0px 0px;
+ }
+
+ footer
+ {
+     background-color: #f2f2f2;
+     display: flex;
+     flex-wrap: wrap;
+     font-family: Raleway-VariableFont_wghts;
      margin-top: 30px;
  }
+
+ footer h4
+ {
+     font-weight: bold;
+     font-size: 0.9em;
+ }
+
+ footer a
+ {
+     font-size: 0.8em;
+     text-decoration: none;
+     color: black;
+     line-height: 2em;
+ }
+
+ .footer
+ {
+     display: flex;
+     flex-direction: column;
+     margin-right: 150px;
+     padding-left: 65px;
+ }
+
+ @media (max-device-width: 620px)
+{
+    .bloc_page
+    {
+        width: 100%;
+    }
+
+.haut_de_page img 
+{
+    width: 150px;
+    align-self: flex-start;
+}
+
+.haut_de_page 
+{
+    display: flex;
+    border:solid blue;
+    width: 100%;
+}
+
+.haut_de_page nav a
+{
+    margin-left: 0px;
+    border: solid pink;
+}
+
+.inscription
+{
+    position: relative;
+    top:-30px;
+}
+
+.recherche_ville
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.filtre_hebergement
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#bloc_vertical
+{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.bloc_populaires 
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px;
+    background-color: #f2f2f2;
+    margin-left: 0px;
+    
+}
+
+.bloc_populaires .clic 
+{
+   margin-top: -10px;
+   margin-bottom: -10px;
+}
+
+.bloc_blanc_droit .clic
+{
+    width: 85%;
+    height: 150px;
+    margin-left: 0px;
+}
+
+.bloc_blanc_droit img 
+{
+    height: 100%;
+    width: 130px;
+}
+
+.etoiles_bloc_droit 
+{
+    width: 15px;
+    height: 10px; 
+    display: flex;   
+}
+
+.etoiles_bloc_droit_milieu 
+{
+    width: 15px;
+    height: 10px; 
+    display: flex;
+}
+
+.description_bloc_droit 
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.liste_des_hebergements
+{
+    margin-left: 10px;
+}
+
+.bloc_hebergements
+{
+    width: 100%;
+    display: flex;
+    flex-direction : column;
+    border-radius: 0px;
+    align-items: center;
+    background-color: white;
+    box-shadow: #F2F2F2;
+}
+
+.bloc_blanc_gauche 
+{
+    width: 85%;
+    height: 200px;
+}
+
+
+
+
+
+
+.bloc_blanc_gauche img
+{
+    height: 130px;
+}
+ 
+.etoiles_bloc_gauche
+{
+}
+
+
+
+
+
+
+
+
+
+.footer
+{
+    display: flex;
+    flex-direction:
+}
+
+
+}

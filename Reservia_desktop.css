@@ -480,25 +480,25 @@
       color: black;
   }
   
-  .etoiles_bloc_droit
+  .etoiles_bloc_gauche
   {
     display: flex;
     width: 30px;
   }
 
-  .etoiles_bloc_droit img
+  .etoiles_bloc_gauche img
   {
     height: 10px;
     width: 15px;
   }
-  .clic .etoiles_bloc_droit
+  .clic .etoiles_bloc_gauche
   {
     position: absolute;
     margin-left: 15px;
     margin-top: -15px;
   }
 
-  .bloc_blanc_droit
+  .bloc_blanc_gauche
   {
     display: flex;
     flex-direction: column;
@@ -509,7 +509,7 @@
     box-shadow: -2px 1px 6px 4px #e0dede;
   }
   
-  .bloc_blanc_droit img
+  .bloc_blanc_gauche img
   {
       position: absolute;
       width: 197px;
@@ -520,7 +520,7 @@
       margin-left: 4px; 
   }
   
-  .description_bloc_droit
+  .description_bloc_gauche
   {
       position: absolute;
       margin-left: 15px;
@@ -574,7 +574,7 @@
       align-self:flex-end;
   }
   
-  .bloc_blanc_gauche
+  .bloc_blanc_droit
   {
     display: flex;
     height: 120px;
@@ -587,7 +587,7 @@
     box-shadow: -2px 1px 6px 4px #e0dede;
   }
   
-  .bloc_blanc_gauche img
+  .bloc_blanc_droit img
 {
     position: absolute;
     height: 112px;
@@ -598,7 +598,7 @@
     margin-bottom: 4px;
 }
   
-  .description_bloc_gauche
+  .description_bloc_droit
   { 
     display: flex;
     flex-direction: column;
@@ -606,18 +606,18 @@
     width: 130px;
     margin-left: 125px;
   }
-  .description_description_bloc_gauche .prix
+  .description_bloc_droit .prix
   {
       margin-top: -8px;
   }
   
-  .etoiles_bloc_gauche img
+  .etoiles_bloc_droit img
   {
     height:10px;
     width: 15px;
   }
 
-  .etoiles_bloc_gauche
+  .etoiles_bloc_droit
   {
       display: flex;
       width: 30px;
