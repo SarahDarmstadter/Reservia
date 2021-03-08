@@ -742,7 +742,7 @@
  {
      background-color: #f2f2f2;
      display: flex;
-     flex-wrap: wrap;
+     width: 100%;
      font-family: Raleway-VariableFont_wghts;
      margin-top: 30px;
  }
@@ -770,9 +770,8 @@
  }
 
 
+ @media screen and (max-width: 640px) {
 
- @media (max-device-width: 620px)
-{
     .bloc_page
     {
         width: 100%;
@@ -811,9 +810,9 @@ nav
 
 .nav_mobile 
 {
-    border: solid green;
+    border-bottom: 2px solid green;
     display: flex;
- width: 100%;
+    width: 100%;
 }
 
 .inscription
@@ -870,7 +869,9 @@ nav
 }
 
 label
-{margin-bottom: 5px;}
+{
+    margin-bottom: 5px;
+}
 
 .information
 {
@@ -880,6 +881,10 @@ label
 /*MISE EN PAGE BLOC HEBERGEMENTS - POPULAIRES*/
 
 /*Mise en page de la partie "les plus populaires"*/
+
+/* mettre une classe pour le bloque du milieu
+faire un fichier css par media queries
+refaire un media queries pour le telephone petit et tablette */ 
 
 #bloc_vertical
 {
@@ -1055,7 +1060,7 @@ margin-bottom: 5px;
     margin-top: 0px;
     margin-bottom: 10px;
 }
-}
+
 .clic_iles img
 {
     width: 100%;
@@ -1123,10 +1128,10 @@ margin-bottom: 5px;
 
 
 
-.footer
+footer
 {
     display: flex;
-    flex-direction:
+    flex-direction: column;
 }
 
 }
