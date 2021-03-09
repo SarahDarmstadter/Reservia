@@ -1,0 +1,108 @@
+@media screen and (min-width:640px) and (max-width:1024px)
+{
+    .bouton_mobile
+    {
+        display: none;
+    }
+
+.filtre_hebergement
+{
+    display: flex;
+}
+
+.bloc_vertical
+{
+    display:flex;
+    flex-direction: column-reverse;
+}
+
+.bloc_populaires
+{
+    margin-left: 0px;
+    padding-bottom: 30px;
+    background-color: white;
+    margin-top: -20px;
+}
+
+.bloc_blanc_droit
+{
+    margin: 0px;
+    width: 270px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.hebergements_populaires
+{
+display: flex;
+margin-left: 25px;
+}
+
+.bloc_hebergements
+{
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+
+
+.bloc_blanc_gauche
+{
+    width: 230px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}  
+
+.afficher_plus
+{
+    position: relative;
+    bottom: 15px;
+}
+
+.clic_vieux_port
+{
+    width: 270px;
+}
+
+
+.bloc_vieux_port img
+{
+    height: 110px;
+}
+
+.bloc_fort_iles
+{
+    width: 270px;
+}
+
+.clic_calanques
+{
+    width: 270px;
+}
+
+.clic_iles
+{
+    width: 100%;
+}
+
+.bloc_eglise_parc
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 570px;
+    margin-top: 30px;
+}
+
+.clic_eglise
+{
+    width: 270px;
+}
+
+.clic_parc
+{
+    margin-top: 0px;
+    width: 270px;
+}
+
+}

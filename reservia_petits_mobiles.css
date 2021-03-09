@@ -1,0 +1,49 @@
+@media screen and (max-width: 375px)
+{
+
+.description_bloc_droit p 
+{
+    width: 150px;
+}
+
+ .prix .hote
+{
+    position: relative;
+    bottom: 10px;
+}
+
+.bloc_populaires .clic
+{
+    position: relative;
+    left: -9px;
+}
+
+.bloc_blanc_droit img
+{
+    height: 100%;
+    width: 105px;
+}
+
+.description_bloc_droit .nom
+{
+    width: 110px;
+    line-height: 1em;
+}
+
+.description_bloc_droit 
+{
+    position: relative;
+    bottom: 5px;
+}
+
+.etoiles_bloc_droit img
+{
+    position: relative;
+    top: 14px;
+}
+
+.liste_des_hebergements
+{
+    margin-left: 0px;
+}
+}
