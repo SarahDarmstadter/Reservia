@@ -22,12 +22,13 @@
     padding-bottom: 30px;
     background-color: white;
     margin-top: -20px;
+    width: 100%;
 }
 
 .bloc_blanc_droit
 {
     margin: 0px;
-    width: 270px;
+    width: 250px;
     margin-right: 20px;
     margin-top: 20px;
 }
@@ -35,6 +36,7 @@
 .hebergements_populaires
 {
 display: flex;
+flex-wrap: wrap;
 margin-left: 25px;
 }
 
@@ -103,6 +105,12 @@ margin-left: 25px;
 {
     margin-top: 0px;
     width: 270px;
+}
+
+.etoiles_bloc_droit_bleu
+{
+    position: relative;
+    bottom: 15px;
 }
 
 }

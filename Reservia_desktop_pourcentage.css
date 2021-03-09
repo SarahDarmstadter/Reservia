@@ -601,7 +601,16 @@
     height: 10px;
     position: relative;
     left: 9px;
-    bottom: -12px;
+    top: 12px;
+  }
+
+  .etoiles_bloc_droit_bleu img 
+  {
+    width: 12px;
+    height: 10px;
+    position: relative;
+    left: 9px;
+    top: 27px;
   }
 
 
