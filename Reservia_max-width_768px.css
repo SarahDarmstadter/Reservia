@@ -1,0 +1,121 @@
+@media screen and (max-width: 768px)
+{
+    .haut_de_page
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .filtre_hebergement
+    {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .bloc_vertical
+    {
+        display:flex;
+        flex-direction: column-reverse;
+    }
+
+    .bloc_populaires
+    {
+        margin-left: 0px;
+        padding-bottom: 30px;
+        background-color: white;
+        margin-top: -20px;
+        width: 100%;
+    }
+
+    .bloc_populaires h3
+    {
+        margin-left: 5px;
+    }
+
+    .hebergements_populaires
+    {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 20px;
+    }
+
+    .bloc_blanc_droit
+    {
+        margin: 0px;
+        width: 270px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+    .description_bloc_droit 
+    {
+        position: relative;
+        bottom: 10px;
+    }
+
+    .etoiles_bloc_droit
+    {
+        position: relative;
+        bottom:-10px;
+    }
+
+    .etoiles_bloc_droit_milieu
+    {
+        position: relative;
+        bottom:-10px;
+    }
+    .etoiles_bloc_droit_bleu
+    {
+        position: relative;
+        bottom:-10px;
+    }
+
+    .liste_des_hebergements
+    {
+        margin-left: 0px;
+    }
+
+    .bloc_hebergements
+    {
+        width: 100%;        
+    }
+
+    .bloc_blanc_gauche
+    {
+        margin-right: 10px;
+    }
+
+    .afficher_plus
+    {
+        position: relative;
+        top: -10px;
+    }
+
+    #activités
+    {
+        margin-left: 20px;
+    }
+
+    #activités h3
+    {
+        margin-left: 15px;
+        font-size: 0.9em;
+    }
+
+    .clic_calanques
+    {margin-top: 30px;}
+
+    .clic_eglise
+    {
+        margin-top: 30px;
+    }
+
+    .footer
+    {
+        padding-left:10px;
+        margin-right: 10%;
+    }
+
+
+    
+}

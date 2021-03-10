@@ -1,0 +1,291 @@
+@media screen and (max-width: 320px)
+{
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer
+{
+    padding-left: 10px;
+}
+
+
+
+#activités
+{
+    margin-left: 0px;
+}
+
+#activités h3
+{
+    font-size: 1em;
+}
+
+.les_activites
+{
+    flex-direction: column;
+    align-items: center;
+}
+
+.clic_vieux_port
+{
+    width: 250px;
+    height: 160px;
+    margin-right: 0px;
+
+}
+
+.clic_vieux_port img
+{
+    width: 100%;
+    height: 110px;
+}
+
+.bloc_fort_iles
+{
+    margin-top: 30px;
+    margin-right: 0px;
+    margin-top: 10px;
+
+}
+
+.clic_fort
+{
+    width: 100%;
+    height: 160px;
+    margin-right: 0px;
+    margin-top: 10px;
+
+}
+
+.clic_fort img 
+{
+    width: 100%;
+    height: 110px;
+}
+
+.clic_iles
+{
+    width: 100%;
+    height: 160px;
+    margin-right: 0px;
+    margin-top: 10px;
+
+}
+
+.clic_iles img 
+{
+    width: 100%;
+    height: 110px;
+}
+
+.bloc_eglise_parc
+{
+    margin-top: 10px;
+}
+.clic_eglise
+{
+    margin-top: 10px;
+}
+
+.clic_parc
+{
+    margin-top: 10px;
+}
+.clic_calanques
+{
+    width: 250px;
+    height: 160px;
+    margin-right: 0px;
+    margin-top: 10px;
+}
+
+.clic_calanques img
+{
+    width: 100%;
+    height: 110px;
+}
+
+.bloc_hebergements h3
+{
+    position: relative;
+    left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.bloc_hebergements
+{
+    background-color: white;
+}
+.liste_des_hebergements
+{
+    padding-top: 0px;
+    flex-direction: column;
+    align-content: center;;
+}
+
+.bloc_blanc_gauche
+{
+    width: 250px;
+    position: relative;
+    right: 9px;
+    margin-bottom: 10px;
+}
+
+.afficher_plus
+{
+    padding-top: 15px;
+}
+
+.titre_bloc_populaires
+{
+    padding-right: 0px;
+    font-size: 0.9em;
+}
+
+#bloc_vertical
+{
+    width: 100%;
+}
+
+.bloc_populaires
+{
+    background-color: #F2F2F2;
+    border-radius: 0px;
+    width: 100%;
+}
+
+.bloc_blanc_droit
+{
+    margin-left: 0px;
+    margin-right:0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    
+}
+
+.bloc_hebergements h3
+{
+    padding-left: 0px;
+}
+
+.hebergements_populaires
+{
+    margin-left: 0px;
+    justify-content: center;
+}
+
+.titre_bloc_populaires
+{
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-right: 0px;
+     padding-left: 15px;
+}
+
+
+.bouton
+{
+    display: none;
+}
+
+.bouton_mobile
+{  
+    background-color: #0065FC;
+    color: white;
+    padding: 10px;
+    width: 40px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+}
+
+.haut_de_page 
+{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   
+}
+
+nav
+{
+display: flex;
+width: 100%;
+}
+
+.haut_de_page nav a 
+{
+    
+    margin-left: 0px;
+    margin-right: 0px; 
+    border-bottom: solid #F2F2F2; 
+    padding-bottom: 10px;
+}
+
+.haut_de_page nav a.inscription
+{
+    border-bottom: none;
+    pointer-events: none;
+}
+    
+.inscription 
+{
+    position: absolute;
+    right: 10px;
+    bottom: 435px;
+    padding: 0px;
+}
+    
+
+.haut_de_page a.nav_mobile1:hover
+{
+      box-sizing: content-box;
+      width: 100%;
+      border-bottom: 2px solid #0065FC;
+      border-top: none;
+      padding-left: 20px;
+      padding-right: 50px;
+      padding-bottom: 10px;
+      color:#0065FC
+
+}
+
+.haut_de_page a.nav_mobile2:hover
+{
+      box-sizing: content-box;
+      width: 100%;
+      border-bottom: 2px solid #0065FC;
+      border-top: none;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 10px;
+      color:#0065FC
+
+}
+
+.nav_mobile1
+{
+    padding-left: 20px;
+    padding-right: 50px;
+    width: 50%;
+}
+
+.nav_mobile2
+{
+    width: 50%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.bloc_page
+{
+    width: 100%;
+}
+
+
+}
