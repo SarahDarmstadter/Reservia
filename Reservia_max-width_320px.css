@@ -240,15 +240,18 @@ width: 100%;
 {
     position: absolute;
     right: 10px;
-    bottom: 435px;
+    bottom: 450px;
     padding: 0px;
 }
-    
+
+.haut_de_page img 
+{
+    width: 150px;
+}
 
 .haut_de_page a.nav_mobile1:hover
 {
-      box-sizing: content-box;
-      width: 100%;
+      
       border-bottom: 2px solid #0065FC;
       border-top: none;
       padding-left: 10%;

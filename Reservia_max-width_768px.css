@@ -4,12 +4,31 @@
     {
         margin-top: 20px;
         margin-bottom: 20px;
+        display: flex;
+        align-items: center;
     }
+
+    .haut_de_page img 
+    {
+        width: 150px;
+    }
+
+    .haut_de_page nav 
+    {
+        padding-top: 0px;
+        
+    }
+
     .filtre_hebergement
     {
         display: flex;
         flex-direction: column;
         margin-top: 10px;
+    }
+
+    label
+    {
+        margin-bottom: 5px;
     }
 
     .bloc_vertical
