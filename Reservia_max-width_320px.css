@@ -1,34 +1,190 @@
-/*pas de hover pour les smartphones */
-
-
-/*depassement de hebergement  et afficher plus.*/
-
-
-
 
 @media screen and (max-width: 520px)
 {
 
-footer
+.bloc_page
+{
+    width: 100%;
+}
+/*MISE EN PAGE DU HEADER*/ 
+
+.haut_de_page 
 {
     display: flex;
     flex-direction: column;
+    align-items: flex-start; 
 }
-
-.footer
+    
+nav
 {
-    padding-left: 10px;
+    display: flex;
+    width: 100%;
 }
-
-#activités
+    
+.haut_de_page nav a 
 {
     margin-left: 0px;
+    margin-right: 0px; 
+    border-bottom: solid #F2F2F2;  
+}
+    
+a:hover
+{
+    display: none;
+}
+    
+.haut_de_page nav a.inscription
+{
+    border-bottom: none;
+    pointer-events: none;
+}
+        
+.inscription 
+{
+    position: absolute;
+    right: 10px;
+    bottom: 400px;
+    padding: 0px;
+}
+    
+.haut_de_page img 
+{
+    width: 150px;
+}
+    
+.haut_de_page a.nav_mobile1
+{      
+    border-bottom: 2px solid #0065FC;
+    text-align:center;
+    color:#0065FC;
 }
 
-#activités h3
+    
+.haut_de_page a.nav_mobile2
 {
-    font-size: 1em;
+    text-align: center; 
 }
+    
+.nav_mobile1
+{
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 50%;
+    padding-top: 10px;
+}
+    
+.nav_mobile2
+{
+    width: 50%;
+    padding-left: 20%;
+    padding-right: 30%;
+    padding-top: 10px;
+}
+
+/*MISE EN PAGE DE LA PARTIE FILTRE*/    
+
+label
+{
+    margin-bottom: 5px;
+}
+
+.bouton
+{
+    display: none;
+}
+
+.bouton_mobile
+{  
+    background-color: #0065FC;
+    color: white;
+    padding: 10px;
+    width: 40px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+}
+
+
+/*MISE EN PAGE DU BLOC HEBERGEMENTS*/ 
+#bloc_vertical
+{
+    width: 100%;
+}
+
+.bloc_hebergements
+{
+    background-color: white;
+}
+
+.bloc_hebergements h3
+{
+    position: relative;
+    left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 60%;
+    padding-left: 0px;
+}
+
+.liste_des_hebergements
+{
+    padding-top: 0px;
+    flex-direction: column;
+    align-content: center;
+}
+
+.bloc_blanc_gauche
+{
+    width: 250px;
+    position: relative;
+    right: 9px;
+    margin-bottom: 10px;
+}
+
+.afficher_plus
+{
+    padding-top: 15px;
+    width: 50%;
+}
+
+/*Mise en page du bloc populaire*/
+
+.titre_bloc_populaires
+{
+    padding-right: 0px;
+    font-size: 0.9em;
+}
+
+.bloc_populaires
+{
+    background-color: #F2F2F2;
+    border-radius: 0px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.bloc_blanc_droit
+{
+    margin-left: 0px;
+    margin-right:0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.hebergements_populaires
+{
+    margin-left: 0px;
+    justify-content: center;
+}
+
+.titre_bloc_populaires
+{
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-right: 5px;
+     padding-left: 15px;
+}
+/*MISE EN PAGE DU BLOC ACTIVITES*/
 
 .les_activites
 {
@@ -36,12 +192,20 @@ footer
     align-items: center;
 }
 
+#activités h3
+{
+    font-size: 1em;
+}
+
+#activités
+{
+    margin-left: 0px;
+}
 .clic_vieux_port
 {
     width: 250px;
     height: 160px;
     margin-right: 0px;
-
 }
 
 .clic_vieux_port img
@@ -55,7 +219,6 @@ footer
     margin-top: 30px;
     margin-right: 0px;
     margin-top: 10px;
-
 }
 
 .clic_fort
@@ -63,7 +226,6 @@ footer
     width: 100%;
     height: 160px;
     margin-right: 0px;
-
 }
 
 .clic_fort img 
@@ -78,7 +240,6 @@ footer
     height: 160px;
     margin-right: 0px;
     margin-top: 10px;
-
 }
 
 .clic_iles img 
@@ -110,186 +271,17 @@ footer
     height: 110px;
 }
 
-.bloc_hebergements h3
+/*MISE EN PAGE DU FOOTER MOBILE*/ 
+
+.footer
 {
-    position: relative;
-    left: 20px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: 50%;
+    padding-left: 10px;
 }
 
-.bloc_hebergements
+footer
 {
-    background-color: white;
-}
-.liste_des_hebergements
-{
-    padding-top: 0px;
-    flex-direction: column;
-    align-content: center;
-}
-
-.bloc_blanc_gauche
-{
-    width: 250px;
-    position: relative;
-    right: 9px;
-    margin-bottom: 10px;
-}
-
-.afficher_plus
-{
-    padding-top: 15px;
-    width: 50%;
-}
-
-.titre_bloc_populaires
-{
-    padding-right: 0px;
-    font-size: 0.9em;
-}
-
-#bloc_vertical
-{
-    width: 100%;
-}
-
-.bloc_populaires
-{
-    background-color: #F2F2F2;
-    border-radius: 0px;
-    width: 100%;
-    padding-bottom: 20px;
-}
-
-.bloc_blanc_droit
-{
-    margin-left: 0px;
-    margin-right:0px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    
-}
-
-.bloc_hebergements h3
-{
-    padding-left: 0px;
-}
-
-.hebergements_populaires
-{
-    margin-left: 0px;
-    justify-content: center;
-}
-
-.titre_bloc_populaires
-{
-     padding-top: 10px;
-     padding-bottom: 10px;
-     padding-right: 5px;
-     padding-left: 15px;
-}
-
-label
-{
-    margin-bottom: 5px;
-}
-
-.bouton
-{
-    display: none;
-}
-
-.bouton_mobile
-{  
-    background-color: #0065FC;
-    color: white;
-    padding: 10px;
-    width: 40px;
-    border-radius: 10px;
-    border: none;
     display: flex;
+    flex-direction: column;
 }
-
-.haut_de_page 
-{
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-   
-}
-
-nav
-{
-display: flex;
-width: 100%;
-}
-
-.haut_de_page nav a 
-{
-    
-    margin-left: 0px;
-    margin-right: 0px; 
-    border-bottom: solid #F2F2F2; 
-
-    
-}
-
-.haut_de_page nav a.inscription
-{
-    border-bottom: none;
-    pointer-events: none;
-}
-    
-.inscription 
-{
-    position: absolute;
-    right: 10px;
-    bottom: 440px;
-    padding: 0px;
-}
-
-.haut_de_page img 
-{
-    width: 150px;
-}
-
-.haut_de_page a.nav_mobile1
-{
-      
-      border-bottom: 2px solid #0065FC;
-      text-align:center;
-      color:#0065FC;
-
-}
-
-.haut_de_page a.nav_mobile2
-{
-     text-align: center;
-
-}
-
-.nav_mobile1
-{
-    padding-left: 10%;
-    padding-right: 10%;
-    width: 50%;
-    padding-top: 10px;
-}
-
-.nav_mobile2
-{
-    width: 50%;
-    padding-left: 20%;
-    padding-right: 30%;
-    padding-top: 10px;
-}
-
-.bloc_page
-{
-    width: 100%;
-}
-
 
 }
