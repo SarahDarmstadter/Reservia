@@ -11,12 +11,7 @@
       src: url('police/Raleway-VariableFont_wght.ttf') format('truetype');
   }
 
-  @font-face
-  {
-      font-family:'fa-solid-900';
-      src: url('police/fa-solid-900.svg');
-  }
-  
+
   /*Mise en place de la police et application d'une largeur de 98% de l'écran*/
   .bloc_page
   {
@@ -34,14 +29,14 @@
       align-items: flex-end;
   }
 
-  .nav 
-  {
-      display: flex;
-  }
-
   .haut_de_page nav
   {
       padding-top: 25px;
+  }
+
+  .nav 
+  {
+      display: flex;
   }
   
   .haut_de_page nav ul
@@ -95,9 +90,8 @@
       font-weight: normal;
   }
   
- 
-  
-  /*Mise en page de la section Filtre*/
+
+  /*MISE EN PAGE DE LA SECTION FILTRE*/
   
   .filtre 
   {
@@ -132,8 +126,6 @@
       width: 190px;
   }
   
-  
-  /*Pourquoi la taille du texte "rechercher" n'a pas changé?*/
   .bouton
   {
       color: white;
@@ -503,7 +495,6 @@
   {
       font-weight: bold;
       font-size: 0.9em;
-
   }
 
   .afficher_plus
@@ -525,14 +516,13 @@
     background-color:#F2F2F2;
     margin-left: 30px;
     border-radius: 15px;
-    
   }
 
   .titre_bloc_populaires
   {
     display: flex;
     justify-content: space-between;
-    font-size: 0.9em;
+    font-size: 01em;
     font-weight: bold;
     padding-left: 30px;
     padding-top: 30px;
@@ -548,7 +538,6 @@
       display: flex;
       padding: 4px;
       box-shadow: -2px 1px 6px 4px #e0dede;
-
   }
 
   .bloc_blanc_droit img
@@ -575,7 +564,7 @@
   {
     position: relative;
     top: -7px;  
-}
+  }
 
   .etoiles_bloc_droit img
   {
@@ -606,7 +595,6 @@
 
 
 /*MISE EN PAGE DU BLOC ACTIVITE*/
-
 
   #activités
   {

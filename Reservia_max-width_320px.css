@@ -2,6 +2,12 @@
 @media screen and (max-width: 520px)
 {
 
+body
+{
+    padding: 10px;
+    margin: 0;
+}
+
 .bloc_page
 {
     width: 100%;
@@ -27,11 +33,7 @@ nav
     margin-right: 0px; 
     border-bottom: solid #F2F2F2;  
 }
-    
-a:hover
-{
-    display: none;
-}
+
     
 .haut_de_page nav a.inscription
 {
@@ -43,7 +45,7 @@ a:hover
 {
     position: absolute;
     right: 10px;
-    bottom: 385px;
+    bottom: 400px;
     padding: 0px;
 }
     
@@ -152,7 +154,7 @@ label
 .titre_bloc_populaires
 {
     padding-right: 0px;
-    font-size: 0.9em;
+    padding-bottom: 5px;
 }
 
 .bloc_populaires
