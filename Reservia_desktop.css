@@ -216,7 +216,7 @@
   
   input:checked + .slider_E:before
   {
-      transform: translateX(116px) ;
+      transform: translateX(116px);
   }
   
   /*Mise en page du filtre Familial*/
