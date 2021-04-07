@@ -43,9 +43,9 @@ nav
         
 .inscription 
 {
-    position: absolute;
-    right: 10px;
-    bottom: 400px;
+    position: relative;
+    right: 20px;
+    bottom: 60px;
     padding: 0px;
 }
     
