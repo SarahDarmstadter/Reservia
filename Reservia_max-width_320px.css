@@ -83,6 +83,12 @@ nav
     padding-top: 10px;
 }
 
+.haut_de_page nav a:hover
+{
+    border-top:none;
+    width:50%;   
+}
+
 /*MISE EN PAGE DE LA PARTIE FILTRE*/    
 
 label
