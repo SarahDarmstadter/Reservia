@@ -103,6 +103,18 @@ label
 }
 
 
+/*input 
+{
+    -webkit-appearance: none;  Parce que tous les champs de formulaire + bouton ca met un arrondi automatique. 
+                        les autres navigateurs ne liront pas les webkit qui ne les concernent pas. 
+
+}
+
+.search
+{
+    border-radius:0;
+}
+
 /*MISE EN PAGE DU BLOC HEBERGEMENTS*/ 
 #bloc_vertical
 {
