@@ -3,240 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel=stylesheet href="Reservia_desktop_safari.css">    
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-    <title>Reservia_safari- Sarah Darmstadter</title>
+    <link rel=stylesheet href="Reservia_desktop.css">
+    <link rel=stylesheet href="Reservia_max-width_768px.css">
+    <link rel=stylesheet href="Reservia_max-width_320px.css">
+    <link rel=stylesheet href="Reservia_min-width520_max749.css">
+    
+     <script src="https://kit.fontawesome.com/b6c58def4c.js" crossorigin="anonymous"></script>
+    <title>Reservia - Sarah Darmstadter</title>
 </head>
     <body>
         <div class="bloc_page">
             <header>
-                <div class="header__heading">
-                    <img class="header__img" src="images/logo/Reservia.svg" alt="logo reservia">
+                <div class="haut_de_page">
+                    <img src="images/logo/Reservia.svg" alt="logo reservia">
                     <nav>
+     
                         <a class="nav_mobile1" href="#bloc_vertical">Hébergements</a>
                         <a class="nav_mobile2" href="#activités">Activités</a>                       
                         <a class="inscription" href="#">S'inscrire</a>
+                    
                     </nav>
                 </div>
-                    <div class="header__texte">
+                    <div class="texte">
                         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                         <h2>En plein centre ville ou en pleine nature</h2>
                     </div>
+             
             </header>
-            <section class="filter">
-                <form class="filter__form" method="post" action="traitement.php"> 
-                    <i class="fas fa-map-marker-alt"></i><input class="filter__form--search" type="search" placeholder="Marseille, France"/>
-                   <input class="filter__form--button" type="submit" value="Rechercher"/>
-                   <input class="filter__form--button filter__form--button_mobile" type="image" src="images/search-solid.svg">
+            <section class="filtre">
+                <form class="recherche_ville" method="post" action="traitement.php"> 
+                   <img src="images/map-marker-alt-solid.svg" alt="icon_map"> <input class="search" type="search" placeholder="Marseille, France"/>
+                   <input class=" bouton" type="submit" value="Rechercher"/>
+                   <input class="bouton_mobile" type="image" src="images/search-solid.svg">
                 </form>
                 
-                <div class="filter__toggle_buttons">
+                <div class="filtre_hebergement">
                     <h2>Filtres</h2>
-                    <label class="toggle__button toggle__button--economique">
-                        <input type="checkbox">
-                        <div class="slider slider--economique">Économique</div>
-                    </label>
-                    <label class="toggle__button toggle__button--familiale">
-                        <input type="checkbox">
-                        <span class="slider slider--familial">Familial</span>
-                    </label>
-                    <label class="toggle__button toggle__button--romantique">
-                        <input type="checkbox">
-                        <span class="slider slider--romantique">Romantique</span>
-                    </label>
-                    <label class="toggle__button toggle__button--animaux">
-                        <input type="checkbox">
-                        <span class="slider slider--animaux">Animaux autorisés</span>
-                    </label>
-                </div>        
-                <div class="information">
-                    <i class="fas fa-info"></i><h4>Plus de 500 logements disponibles dans cette ville</h4>
+                 <label class="switch_E">
+                    <input type="checkbox">
+                    <span class="slider_E">Économique</span>
+                </label>
+                
+                <label class="switch_F">
+                    <input type="checkbox">
+                    <span class="slider_F">Familial</span>
+                </label>
+
+                <label class="switch_R">
+                    <input type="checkbox">
+                    <span class="slider_R">Romantique</span>
+                </label>
+                <label class="switch_A">
+                    <input type="checkbox">
+                    <span class="slider_A">Animaux autorisés</span>
+                </label>
+            </div>
+            </section>
+        
+            <section class="information">
+                <div class="info">
+                    <img src="images/info-solid.svg" alt="information" /><h4>Plus de 500 logements disponibles dans cette ville</h4>
                 </div>
             </section>
-            <section id="section__hebergements" >
-                <div class="hebergements__main_bloc">
+            
+            <section id="bloc_vertical" class="bloc_vertical">
+                <div class="bloc_hebergements">
                     <h3>Hébergements à Marseille</h3>
-                    <div class="hebergements__container">
+                    <div class="liste_des_hebergements">
+
                         <a class="clic" href="https://www.google.com/" target="_blank">
-                            <div class="hebergement__bloc hebergement__bloc--gauche">
+                            <div class="bloc_blanc_gauche">
                                 <img src="images/hebergements/3_medium/Cannebiere.jpg" alt="Auberge la Cannebiere">
-                                <div class="hebergement__description">
-                                    <p class="hebergement__description--nom">Auberge la Cannebiere</p>
-                                    <p class="hebergement__description--prix">Nuit à partir de 25€</p>
-                                    <div class="etoiles">
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star fa-star--grey"></i>
-                                    </div>
+                                <div class="description_bloc_gauche">
+                                    <p class="nom">Auberge la Cannebiere</p>
+                                    <p class="prix">Nuit à partir de 25€</p>
+                                </div>
+                                <div class="etoiles_bloc_gauche">
+                                    <img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-grise.svg" alt="etoile grise">
                                 </div>
                             </div>
                         </a>
 
                         <a class="clic" href="https://www.google.com/" target="_blank">
-                            <div class="hebergement__bloc hebergement__bloc--gauche">
-                                <img src="images/hebergements/3_medium/hotel_du_port.jpg" alt="hotel du port">
-                                <div class="hebergement__description">
-                                    <p class="hebergement__description--nom">Hôtel du port</p>
-                                    <p class="hebergement__description--prix"> Nuit à partir de 52€</p>
-                                    <div class="etoiles">
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star fa-star--grey"></i>
-                                    </div>
-                                </div>
+                        <div class="bloc_blanc_gauche">
+                            <img src="images/hebergements/3_medium/hotel_du_port.jpg" alt="hotel du port">
+                            <div class="description_bloc_gauche">
+                                <p class="nom">Hôtel du port</p>
+                                <p class="prix"> Nuit à partir de 52€</p>
                             </div>
+                            <div class="etoiles_bloc_gauche">
+                                <img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-grise.svg" alt="etoile grise">
+                            </div>
+                        </div>
                         </a>
 
                         <a class="clic" href="https://www.google.com/" target="_blank">
-                            <div class="hebergement__bloc hebergement__bloc--gauche">
+                            <div class="bloc_blanc_gauche">
                                 <img src="images/hebergements/3_medium/hotel_les_mouettes.jpg" alt="hotel les mouettes">
-                                <div class="hebergement__description">
-                                    <p class="hebergement__description--nom">Hôtel Les mouettes</p>
-                                    <p class="hebergement__description--prix"> Nuit à partir de 76€</p>
-                                    <div class="etoiles">
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star fa-star--grey"></i>
-                                    </div>
-                                </div>    
-                            </div>
-                        </a>
-
-                        <a class="clic" href="https://www.google.com/" target="_blank">
-                            <div class="hebergement__bloc">
-                                <img src="images/hebergements/3_medium/hotel_de_la_mer.jpg" alt="hotel de la mer">
-                                <div class="hebergement__description">
-                                    <p class="hebergement__description--nom">Hôtel de la mer</p>
-                                    <p class="hebergement__description--prix"> Nuit à partir de 46€</p>
-                                    <div class="etoiles">
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star fa-star--grey"></i><i class="fas fa-star fa-star--grey"></i>
-                                    </div>
+                                <div class="description_bloc_gauche">
+                                    <p class="nom">Hôtel Les mouettes</p>
+                                    <p class="prix"> Nuit à partir de 76€</p>
+                                </div>
+                            
+                                <div class="etoiles_bloc_gauche">
+                                    <img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-grise.svg" alt="etoile grise">
                                 </div>
                             </div>
                             </a>
 
                         <a class="clic" href="https://www.google.com/" target="_blank">
-                            <div class="hebergement__bloc">
+                            <div class="bloc_blanc_gauche">
+                                <img src="images/hebergements/3_medium/hotel_de_la_mer.jpg" alt="hotel de la mer">
+                                <div class="description_bloc_gauche">
+                                    <p class="nom">Hôtel de la mer</p>
+                                    <p class="prix"> Nuit à partir de 46€</p>
+                                </div>
+                                <div class="etoiles_bloc_gauche">
+                                    <img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-grise.svg" alt="etoile grise">
+                                </div>
+                            </div>
+                            </a>
+
+                        <a class="clic" href="https://www.google.com/" target="_blank">
+                            <div class="bloc_blanc_gauche">
                                 <img src="images/hebergements/3_medium/auberge_le_panier.jpg" alt="Auberge le Panier">
-                                <div class="hebergement__description">
-                                    <p class="hebergement__description--nom">Auberge Le Panier</p>
-                                    <p class="hebergement__description--prix">Nuit à partir de 23€</p>
-                                    <div class="etoiles">
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star fa-star--grey"></i>
-                                    </div>
-                                </div>    
+                                <div class="description_bloc_gauche">
+                                    <p class="nom">Auberge Le Panier</p>
+                                    <p class="prix">Nuit à partir de 23€</p>
+                                </div>
+                                <div class="etoiles_bloc_gauche">
+                                    <img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-grise.svg" alt="etoile grise">
+                                </div>
                             </div>
                         </a>
 
                         <a class="clic" href="https://www.google.com/" target="_blank">
-                            <div class="hebergement__bloc">
+                            <div class="bloc_blanc_gauche">
                                 <img src="images/hebergements/3_medium/hotel_chez_amina.jpg" alt="hotel chez amina">
-                                <div class="hebergement__description">
-                                    <p class="hebergement__description--nom">Hôtel chez Amina</p>
-                                    <p class="hebergement__description--prix">Nuit à partir de 96€</p>
-                                    <div class="etoiles">
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star fa-star--grey"></i>
-                                    </div>
-                                </div>    
+                                <div class="description_bloc_gauche">
+                                    <p class="nom">Hôtel chez Amina</p>
+                                    <p class="prix">Nuit à partir de 96€</p>
+                                </div>
+                                <div class="etoiles_bloc_gauche">
+                                    <img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-grise.svg" alt="etoile grise">
+                                </div>
                             </div>
                         </a>
                     </div>
-                    <a class=" clic afficher_plus" href="#">Afficher plus</a>
+                    <a class="afficher_plus" href="#">Afficher plus</a>
                 </div>
-                
-                <aside class="popular_hebergements__main_bloc">
-                    <div class="popular_hebergements__heading">
-                        <a class="clic clic--popular" href="#">Les plus populaires</a><i class="fas fa-chart-line"></i>
+                <aside class="bloc_populaires">
+                    <div class="titre_bloc_populaires">
+                        <a href="#">Les plus populaires </a>
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                   <div class="popular_hebergements__container">
-                        <a class="clic" href="https://www.google.com/" target="_blank">
-                            <div class="hebergement__bloc hebergement__bloc--popular">
-                                <img src="images/hebergements/3_medium/hotel_le_soleil_du_matin_2.jpg" alt="soleil du matin">
-                                <div class="hebergement__description hebergement__description--popular">
-                                    <p class="hebergement__description--nom">Hôtel Le soleil du matin </p>
-                                    <p class="hebergement__description--prix">Nuit à partir de 128€</p>
-                                    <div class="etoiles etoiles--popular">
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                    </div>
-                                </div>
+                   <div class="hebergements_populaires">
+                    <a class="clic" href="https://www.google.com/" target="_blank">
+                    <div class="bloc_blanc_droit">
+                        <img src="images/hebergements/3_medium/hotel_le_soleil_du_matin_2.jpg" alt="soleil du matin">
+                        <div class="description_bloc_droit">
+                            <p class="nom">Hôtel Le soleil du matin </p>
+                            <p class="prix">Nuit à partir de 128€</p>
+                            <div class="etoiles_bloc_droit">
+                                <img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée">
                             </div>
-                        </a>
-
-                        <a class="clic" href="https://www.google.com/" target="_blank">
-                            <div class="hebergement__bloc hebergement__bloc--popular">
-                                <img src="images/hebergements/3_medium/Au_coeur_deleau_3.jpg" alt="soleil du matin">
-                                <div class="hebergement__description hebergement__description--popular ">
-                                    <p class="hebergement__description--nom">Au coeur de l'eau Chambre d'hôtes </p>
-                                    <p class="hebergement__description--prix">Nuit à partir de 71€</p>
-                                    <div class="etoiles etoiles--popular_hote">
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="clic" href="https://www.google.com/" target="_blank">
-                            <div class="hebergement__bloc hebergement__bloc--popular">
-                                <img src="images/hebergements/3_medium/hotel_tout_bleu_2.jpg" alt="hotel tout bleu">
-                                <div class="hebergement__description hebergement__description--popular">
-                                    <p class="hebergement__description--nom">Hôtel Tout bleu et Blanc</p>
-                                    <p class="hebergement__description--prix">Nuit à partir de 68€</p>
-                                    <div class="etoiles etoiles--popular">
-                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star fa-star--grey"></i>
-                                    </div>
-                                </div> 
-                            </div>
-                        </a>
+                        </div>
                     </div>
+                    </a>
+
+                    <a class="clic" href="https://www.google.com/" target="_blank">
+                        <div class="bloc_blanc_droit">
+                            <img src="images/hebergements/3_medium/Au_coeur_deleau.jpg" alt="chambre d'hôtes">
+                            <div class="description_bloc_droit">
+                                <p class="nom hote" >Au coeur de l'eau Chambre d'hôtes</p>
+                                <p class="prix hote">Nuit à partir de 71€</p>    
+                            <div class="etoiles_bloc_droit_milieu">
+                                <img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-grise.svg" alt="etoile grise">
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+
+                    <a class="clic" href="https://www.google.com/" target="_blank">
+                        <div class="bloc_blanc_droit">
+                            <img src="images/hebergements/3_medium/hotel_tout_bleu_2.jpg" alt="hotel tout bleu">
+                            <div class="description_bloc_droit">
+                                <p class="nom">Hôtel Tout bleu et Blanc</p>
+                                <p class="prix">Nuit à partir de 68€</p>
+                            <div class="etoiles_bloc_droit_bleu">
+                                <img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-blue.svg" alt="etoile cochée"><img src="images/star-grise.svg" alt="etoile grise">
+                            </div>
+                        </div> 
+                    </div>
+                    </a>
+                    </div>
+
                 </aside>
             </section>
         <section id="activités">
                 <h3>Activités à Marseille</h3>
-                <div class="activite__container">
-                    <a class="activite__bloc clic" href="https://www.google.com/" target="_blank">
+            <div class="les_activites">
+                <a class="clic_vieux_port" href="https://www.google.com/" target="_blank">
                         <img src="images/activites/Redimensionnés/vieux_port.jpg" alt="image vieux port">
-                        <p class="activite__nom">Vieux Port</p>
-                    </a>  
-                    <div class="double_activite__bloc">
-                        <a class="activite__bloc--fort clic" href="https://www.google.com/" target="_blank">
-                            <img src="images/activites/Redimensionnés/fort.jpg" alt="image fort">
-                            <p class="activite__nom">Fort de Pomégues</p>
+                        <p>Vieux Port</p>
+                </a>
+                    
+                    <div class="bloc_fort_iles">
+                        <a class="clic_fort" href="https://www.google.com/" target="_blank">
+                                <img src="images/activites/Redimensionnés/fort.jpg" alt="image fort">
+                                <p>Fort de Pomégues</p>
                         </a>
-                        <a class="activite__bloc--iles clic" href="https://www.google.com/" target="_blank">
-                            <img src="images/activites/Redimensionnés/iles.jpg" alt="image iles">
-                            <p class="activite__nom"> Îles du Frioul</p>
+                        <a class="clic_iles" href="https://www.google.com/" target="_blank">
+                                <img src="images/activites/Redimensionnés/iles.jpg" alt="image iles">
+                                <p> Îles du Frioul</p>
                         </a>
                     </div>
 
-                    <a class="activite__bloc clic" href="https://www.google.com/" target="_blank">
-                        <img src="images/activites/Redimensionnés/calanques.jpg" alt="image calanques">
-                        <p class="activite__nom">Parc National des Calanques</p>
+                    <a class="clic_calanques" href="https://www.google.com/" target="_blank">
+                            <img src="images/activites/Redimensionnés/calanques.jpg" alt="image calanques">
+                            <p>Parc National des Calanques</p>
                     </a>
                         
-                    <div class="double_activite__bloc">
-                        <a class="activite__bloc--eglise_parc clic" href="https://www.google.com/" target="_blank">
-                            <img src="images/activites/Redimensionnés/eglise.jpg" alt="image église">
-                            <p class="activite__nom">Notre-Dame-de-la-Garde</p>
+                        <div class="bloc_eglise_parc">
+                            <a class="clic_eglise" href="https://www.google.com/" target="_blank">
+                                <img src="images/activites/Redimensionnés/eglise.jpg" alt="image église">
+                                <p>Notre-Dame-de-la-Garde</p>
+                            </a>
+                        <a class="clic_parc" href="https://www.google.com/" target="_blank">
+                            
+                                <img src="images/activites/Redimensionnés/parc.jpg" alt="image parc">
+                                <p>Parc Longchamps</p>
                         </a>
-                        <a class="activite__bloc--eglise_parc marge clic" href="https://www.google.com/" target="_blank">
-                            <img src="images/activites/Redimensionnés/parc.jpg" alt="image parc">
-                            <p class="activite__nom">Parc Longchamps</p>
-                        </a>
-                    </div>
+                        </div>
                 </div>
             </section>
         </div>
         <footer>
             <div class="footer">
                 <h4>A propos</h4>
-                <a class="clic" href="#">Fonctionnement du site</a>
-                <a class="clic" href="#">Conditions générales de vente</a>
-                <a class="clic" href="#">Données et confidentialité</a>
+                <a href="#">Fonctionnement du site</a>
+                <a href="#">Conditions générales de vente</a>
+                <a href="#">Données et confidentialité</a>
             </div>
             <div class="footer">
                 <h4>Nos hébergements</h4>
-                <a class="clic" href="#">Charte qualité</a>
-                <a class="clic" href="#">Soumettre votre hôtel</a>
+                <a href="#">Charte qualité</a>
+                <a href="#">Soumettre votre hôtel</a>
             </div>
             <div class="footer">
                 <h4>Assistance</h4>
-                <a class="clic" href="#">Centre d'aide</a>
-                <a class="clic" href="#">Nous contacter</a>
+                <a href="#">Centre d'aide</a>
+                <a href="#">Nous contacter</a>
             </div>
         </footer>
     </body>

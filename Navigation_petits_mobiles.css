@@ -1,10 +1,9 @@
-
-@media screen and (min-width: 320px)  and (max-width: 520px)
+@media screen and (max-width: 320px)
 {
 
-body
+    body
 {
-   padding:0;
+   
     margin: 0;
 }
 
@@ -44,9 +43,9 @@ nav
         
 .inscription 
 {
-    position: relative;
-    right: 31%;
-    bottom: 60px;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
 }
     
 .haut_de_page img 
@@ -57,21 +56,19 @@ nav
 .haut_de_page .nav_mobile1
 {      
     border-bottom: 2px solid #0065FC;
-    text-align:center;
-    color:#0065FC;
-    padding-left:10%;
-    padding-right: 10%;
-    width:50%;
+    text-align: center;
+    color: #0065FC;
+    padding-left: 9%;
+    padding-right: 9%;
 }
 
-    
 .haut_de_page .nav_mobile2
 {
-    text-align: center; 
-    padding-left: 16%;
-    padding-right:16%;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
 }
-
+  
 .haut_de_page nav a:hover
 {
     border-top:none;
@@ -96,24 +93,11 @@ label
     color: white;
     padding: 10px;
     width: 40px;
-    height:40px;
     border-radius: 10px;
     border: none;
     display: flex;
 }
 
-
-/*input 
-{
-    -webkit-appearance: none;  Parce que tous les champs de formulaire + bouton ca met un arrondi automatique. 
-                        les autres navigateurs ne liront pas les webkit qui ne les concernent pas. 
-
-}
-
-.search
-{
-    border-radius:0;
-}
 
 /*MISE EN PAGE DU BLOC HEBERGEMENTS*/ 
 #bloc_vertical
@@ -293,5 +277,6 @@ footer
     display: flex;
     flex-direction: column;
 }
+
 
 }

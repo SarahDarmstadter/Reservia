@@ -1,0 +1,284 @@
+
+@media screen and (min-width: 320px)  and (max-width: 520px)
+{
+
+body
+{
+   padding:0;
+    margin: 0;
+}
+
+.bloc_page
+{
+    width: 100%;
+    padding: 10px;
+}
+/*MISE EN PAGE DU HEADER*/ 
+
+.haut_de_page 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+    
+nav
+{
+    display: flex;
+    width: 100%;
+}
+    
+.haut_de_page nav a 
+{
+    margin-left: 0px;
+    margin-right: 0px; 
+    border-bottom: solid #F2F2F2;  
+}
+
+    
+.haut_de_page nav a.inscription
+{
+    border-bottom: none;
+}
+        
+.inscription 
+{
+    position: relative;
+    right: 31%;
+    bottom: 60px;
+}
+    
+.haut_de_page img 
+{
+    width: 150px;
+}
+    
+.haut_de_page .nav_mobile1
+{      
+    border-bottom: 2px solid #0065FC;
+    text-align:center;
+    color:#0065FC;
+    padding-left:10%;
+    padding-right: 10%;
+    width:50%;
+}
+
+    
+.haut_de_page .nav_mobile2
+{
+    text-align: center; 
+    padding-left: 16%;
+    padding-right:16%;
+}
+
+.haut_de_page nav a:hover
+{
+    border-top:none;
+    width:50%;   
+}
+
+/*MISE EN PAGE DE LA PARTIE FILTRE*/    
+
+label
+{
+    margin-bottom: 5px;
+}
+
+.bouton
+{
+    display: none;
+}
+
+.bouton_mobile
+{  
+    background-color: #0065FC;
+    color: white;
+    padding: 10px;
+    width: 40px;
+    height:40px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+}
+
+
+/*MISE EN PAGE DU BLOC HEBERGEMENTS*/ 
+#bloc_vertical
+{
+    width: 100%;
+}
+
+.bloc_hebergements
+{
+    background-color: white;
+}
+
+.bloc_hebergements h3
+{
+    position: relative;
+    left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 60%;
+    padding-left: 0px;
+}
+
+.liste_des_hebergements
+{
+    padding-top: 0px;
+    flex-direction: column;
+    align-content: center;
+}
+
+.bloc_blanc_gauche
+{
+    width: 250px;
+    position: relative;
+    right: 9px;
+    margin-bottom: 10px;
+}
+
+.afficher_plus
+{
+    padding-top: 15px;
+    width: 50%;
+}
+
+/*Mise en page du bloc populaire*/
+
+.titre_bloc_populaires
+{
+    padding-right: 0px;
+    padding-bottom: 5px;
+}
+
+.bloc_populaires
+{
+    background-color: #F2F2F2;
+    border-radius: 0px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.bloc_blanc_droit
+{
+    margin-left: 0px;
+    margin-right:0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.hebergements_populaires
+{
+    margin-left: 0px;
+    justify-content: center;
+}
+
+.titre_bloc_populaires
+{
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-right: 5px;
+     padding-left: 15px;
+}
+/*MISE EN PAGE DU BLOC ACTIVITES*/
+
+.les_activites
+{
+    flex-direction: column;
+    align-items: center;
+}
+
+#activités h3
+{
+    font-size: 1em;
+}
+
+#activités
+{
+    margin-left: 0px;
+}
+.clic_vieux_port
+{
+    width: 250px;
+    height: 160px;
+    margin-right: 0px;
+}
+
+.clic_vieux_port img
+{
+    width: 100%;
+    height: 110px;
+}
+
+.bloc_fort_iles
+{
+    margin-top: 30px;
+    margin-right: 0px;
+    margin-top: 10px;
+}
+
+.clic_fort
+{
+    width: 100%;
+    height: 160px;
+    margin-right: 0px;
+}
+
+.clic_fort img 
+{
+    width: 100%;
+    height: 110px;
+}
+
+.clic_iles
+{
+    width: 100%;
+    height: 160px;
+    margin-right: 0px;
+    margin-top: 10px;
+}
+
+.clic_iles img 
+{
+    width: 100%;
+    height: 110px;
+}
+
+.clic_eglise
+{
+    margin-top: 10px;
+}
+
+.clic_parc
+{
+    margin-top: 10px;
+}
+.clic_calanques
+{
+    width: 250px;
+    height: 160px;
+    margin-right: 0px;
+    margin-top: 10px;
+}
+
+.clic_calanques img
+{
+    width: 100%;
+    height: 110px;
+}
+
+/*MISE EN PAGE DU FOOTER MOBILE*/ 
+
+.footer
+{
+    padding-left: 10px;
+}
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+}
+
+}
