@@ -196,41 +196,57 @@ label
 
 .clic_vieux_port
         {
+            width:300px;
             height:200px;
             margin-bottom: 20px;
         }
 
         .clic_calanques
         {
+            width:300px;
             height:200px;
             margin-bottom: 20px;
         }
 
         .clic_fort
         {
+            width:300px;
             margin-bottom: 20px;
             height:200px;
         }
 
         .clic_iles
         {
+            width:300px;
             margin-bottom: 20px;
             height:200px;
         }
 
         .clic_parc
         {
+            width:300px;
             height: 200px;
             margin-bottom: 20px;
-
         }
 
         .clic_eglise
         {
+            width:300px;
             height:200px;
             margin-bottom: 20px;
         }
 
+        .bloc_fort_iles
+        {
+            width:300px;
+            
+        }
+
+        .bloc_eglise_parc
+        {
+            width:300px;
+
+        }
 /*MISE EN PAGE DU FOOTER MOBILE*/ 
 
 .footer

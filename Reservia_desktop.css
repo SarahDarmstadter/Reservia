@@ -671,7 +671,7 @@
 
   .clic_vieux_port
   {
-      width: 300px;
+      width: 23%;
       box-shadow: -2px 1px 6px 4px #e0dede;
       border-radius: 15px;
       background: url('images/activites/3_medium/port.jpg');
@@ -683,7 +683,7 @@
 
   .bloc_fort_iles
 {
-    width: 300px;
+    width: 23%;
     height:400px;
     display: flex;
     flex-direction: column;
@@ -718,7 +718,7 @@
 
   .clic_calanques
   {
-      width: 300px;
+      width: 23%;
       box-shadow: -2px 1px 6px 4px #e0dede;
       border-radius: 15px;
       background: url('images/activites/3_medium/calanques.jpg');
@@ -730,7 +730,7 @@
 
   .bloc_eglise_parc
 {
-    width: 300px;
+    width: 23%;
     height:400px;
     display: flex;
     flex-direction: column;

@@ -1,5 +1,5 @@
 
-@media screen and (min-width: 520px) and (max-width: 768px)
+@media screen and (min-width: 520px) and (max-width: 900px)
 {
         .haut_de_page
         {
@@ -50,5 +50,62 @@
         {
             margin-left: 30px;
         }
+
+        .clic_vieux_port
+  {
+      width: 300px;
+      height:400px;
+  }
+
+  .bloc_fort_iles
+{
+    width: 300px;
+    height:420px;
+}
+
+  .clic_fort
+  {
+      width: 300px;
+      height:190px;
+      
+  }
+
+  .clic_iles
+  {
+      
+      width: 300px;
+      height: 190px;
+  }
+
+  .clic_calanques
+  {
+      width: 300px;
+      height:400px;
+  }
+
+  .bloc_eglise_parc
+{
+    width: 300px;
+    height:420px;
+
+}
+
+
+  .clic_eglise
+  {
+      width: 300px;
+      height: 185px;
+      
+  }
+
+  .clic_parc
+  {
+      width: 300px;
+      height: 185px;
+
+  }
+
+ 
+
         
 }
