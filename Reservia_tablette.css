@@ -1,0 +1,69 @@
+ @media screen and (max-width: 1200px) 
+ {
+    .bloc_vertical
+    {
+        display:flex;
+        flex-direction: column-reverse;
+    }
+
+    .filtre_hebergement
+        {
+            display:flex;
+           flex-direction:column;
+        }
+
+    .bloc_blanc_gauche
+    {
+        width: 250px;
+        height: 210px;
+    }
+
+    .bloc_hebergements
+    {
+        width: 100%;        
+    }
+
+    .bloc_panier
+    {
+        background-size:cover;
+    }
+
+    .hebergements_populaires
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .bloc_populaires
+    {
+        background: none;
+        padding:0;
+    }
+
+   .clic_droit
+   {
+       margin-right:15px;
+   }
+
+    .titre_bloc_populaires
+    {
+        width:100%;
+    }
+
+     /*Partie activites*/
+    
+
+    #activités h3
+    {
+        margin-left: 15px;
+        font-size: 0.9em;
+    }
+
+
+    .footer
+    {
+        margin-right:10%;
+        padding-left: 20px;
+    }
+ }

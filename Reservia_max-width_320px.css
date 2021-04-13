@@ -133,165 +133,103 @@ label
 #bloc_vertical
 {
     width: 100%;
+    display:flex;
+    flex-direction: column-reverse;
+    align-items: center;
 }
 
 .bloc_hebergements
 {
-    background-color: white;
-    margin:0;
-    align-items: center;
+    padding:0;
+    background:none;
 }
 
 .bloc_hebergements h3
 {
-    width:90%;
+    padding:20px;
 }
-
 .liste_des_hebergements
 {
-    padding-top: 0px;
+    display: flex;
+    align-items: center;
     flex-direction: column;
-    align-content: center;
-}
-
-.bloc_blanc_gauche
-{
-    width: 90%;
-    height: 200px;
-    position: relative;
-    right: 9px;
-    margin-bottom: 15px;
-}
-
-.photo_gauche
-{
-    height:125px;
-}
-
-.etoiles_bloc_gauche
-{
-    height: 15px;
 }
 
 .afficher_plus
 {
-    padding-top: 15px;
-    width: 90%;
+    padding:20px 20px 0px 20px;
 }
-
-/*Mise en page du bloc populaire*/
 
 .titre_bloc_populaires
 {
-    padding-right: 0px;
-    padding-bottom: 5px;
+    padding: 20px;
 }
 
 .bloc_populaires
 {
-    background-color: #F2F2F2;
-    border-radius: 0px;
-    width: 100%;
-    padding-bottom: 20px;
+    background: #F2F2F2;
+    border-radius: 0;
 }
 
-.bloc_blanc_droit
+.clic_droit
 {
-    margin-left: 0px;
-    margin-right:0px;
-    margin-top: 0px;
-    margin-bottom: 10px;
+    margin-right:0;
 }
 
 .hebergements_populaires
 {
-    margin-left: 0px;
     justify-content: center;
 }
 
-.titre_bloc_populaires
+.bloc_blanc_gauche
 {
-     padding-top: 10px;
-     padding-bottom: 10px;
-     padding-right: 5px;
-     padding-left: 15px;
+    margin:0 0 20px 0;
+    height:200px;
+    width:300px;
 }
-/*MISE EN PAGE DU BLOC ACTIVITES*/
 
 .les_activites
 {
-    flex-direction: column;
+    flex-direction:column;
     align-items: center;
 }
 
-#activités h3
-{
-    font-size: 1em;
-}
-
-#activités
-{
-    margin-left: 0px;
-}
 .clic_vieux_port
-{
-    width: 90%;
-    height: 200px;
-    margin-right: 0px;
-}
+        {
+            height:200px;
+            margin-bottom: 20px;
+        }
 
-.bloc_fort_iles
-{
-    margin-top: 30px;
-    margin-right: 0px;
-    margin-top: 10px;
-    width:90%;
-}
+        .clic_calanques
+        {
+            height:200px;
+            margin-bottom: 20px;
+        }
 
-.clic_fort
-{
-    width: 100%;
-    height: 200px;
-    margin-right: 0px;
-}
+        .clic_fort
+        {
+            margin-bottom: 20px;
+            height:200px;
+        }
 
-.clic_iles
-{
-    width: 100%;
-    height: 200px;
-    margin-right: 0px;
-    margin-top: 10px;
-}
+        .clic_iles
+        {
+            margin-bottom: 20px;
+            height:200px;
+        }
 
-.clic_calanques
-{
-    width: 90%;
-    height: 200px;
-    margin-right: 0px;
-    margin-top: 10px;
-}
+        .clic_parc
+        {
+            height: 200px;
+            margin-bottom: 20px;
 
-.bloc_eglise_parc
-{
-    margin-right: 0px;
-    margin-top: 10px;
-    width:90%;
-}
+        }
 
-.clic_eglise
-{
-    width: 100%;
-    height: 200px;
-    margin-top:0px;
-}
-
-.clic_parc
-{
-    width: 100%;
-    height: 200px;
-    margin-right: 0px;
-    margin-top: 10px;
-}
+        .clic_eglise
+        {
+            height:200px;
+            margin-bottom: 20px;
+        }
 
 /*MISE EN PAGE DU FOOTER MOBILE*/ 
 
