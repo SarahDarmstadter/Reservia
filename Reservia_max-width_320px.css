@@ -10,7 +10,7 @@ body
 
 .bloc_page
 {
-    width: 100%;
+    width: 95%;
     padding: 10px;
 }
 /*MISE EN PAGE DU HEADER*/ 
@@ -101,6 +101,33 @@ label
     display: flex;
 }
 
+.eco_famille
+{
+    display:flex;
+}
+
+.slider_E
+{
+    margin-left:0;
+    margin-right: 20px;
+}
+
+.slider_F
+{
+    margin-left:0;
+}
+
+.slider_R
+{
+    margin-left:0;
+}
+
+.slider_A
+{
+    margin-left:0;
+}
+
+
 
 /*MISE EN PAGE DU BLOC HEBERGEMENTS*/ 
 #bloc_vertical
@@ -111,16 +138,13 @@ label
 .bloc_hebergements
 {
     background-color: white;
+    margin:0;
+    align-items: center;
 }
 
 .bloc_hebergements h3
 {
-    position: relative;
-    left: 20px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: 60%;
-    padding-left: 0px;
+    width:90%;
 }
 
 .liste_des_hebergements
@@ -132,16 +156,27 @@ label
 
 .bloc_blanc_gauche
 {
-    width: 250px;
+    width: 90%;
+    height: 200px;
     position: relative;
     right: 9px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.photo_gauche
+{
+    height:125px;
+}
+
+.etoiles_bloc_gauche
+{
+    height: 15px;
 }
 
 .afficher_plus
 {
     padding-top: 15px;
-    width: 50%;
+    width: 90%;
 }
 
 /*Mise en page du bloc populaire*/
@@ -200,15 +235,9 @@ label
 }
 .clic_vieux_port
 {
-    width: 250px;
-    height: 160px;
+    width: 90%;
+    height: 200px;
     margin-right: 0px;
-}
-
-.clic_vieux_port img
-{
-    width: 100%;
-    height: 110px;
 }
 
 .bloc_fort_iles
@@ -216,56 +245,52 @@ label
     margin-top: 30px;
     margin-right: 0px;
     margin-top: 10px;
+    width:90%;
 }
 
 .clic_fort
 {
     width: 100%;
-    height: 160px;
+    height: 200px;
     margin-right: 0px;
-}
-
-.clic_fort img 
-{
-    width: 100%;
-    height: 110px;
 }
 
 .clic_iles
 {
     width: 100%;
-    height: 160px;
+    height: 200px;
     margin-right: 0px;
     margin-top: 10px;
 }
 
-.clic_iles img 
+.clic_calanques
 {
-    width: 100%;
-    height: 110px;
+    width: 90%;
+    height: 200px;
+    margin-right: 0px;
+    margin-top: 10px;
+}
+
+.bloc_eglise_parc
+{
+    margin-right: 0px;
+    margin-top: 10px;
+    width:90%;
 }
 
 .clic_eglise
 {
-    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+    margin-top:0px;
 }
 
 .clic_parc
 {
-    margin-top: 10px;
-}
-.clic_calanques
-{
-    width: 250px;
-    height: 160px;
+    width: 100%;
+    height: 200px;
     margin-right: 0px;
     margin-top: 10px;
-}
-
-.clic_calanques img
-{
-    width: 100%;
-    height: 110px;
 }
 
 /*MISE EN PAGE DU FOOTER MOBILE*/ 
