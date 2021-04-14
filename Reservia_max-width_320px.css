@@ -209,39 +209,41 @@ label
         .clic_fort
         {
             width:300px;
-            height:220px;
+            height:200px;
         }
 
         .clic_iles
         {
             width:300px;
-            height:220px;
+            height:200px;
         }
 
         .clic_parc
         {
             width:300px;
-            height: 220px;
+            height: 200px;
         }
 
         .clic_eglise
         {
             width:300px;
-            height:220px;
+            height:200px;
         }
 
         .bloc_fort_iles
         {
             width:300px; 
+            height: 440px;
         }
 
         .bloc_eglise_parc
         {
             width:300px;
+            height:440px;
         }
 .clic_activite
 {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 /*MISE EN PAGE DU FOOTER MOBILE*/ 
