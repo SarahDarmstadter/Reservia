@@ -194,7 +194,7 @@ label
     align-items: center;
 }
 
-.clic_vieux_port
+    .clic_vieux_port
         {
             width:300px;
             height:200px;
@@ -244,6 +244,11 @@ label
 .clic_activite
 {
     margin-top: 20px;
+}
+
+#activités h3
+{
+    margin-bottom:0;
 }
 
 /*MISE EN PAGE DU FOOTER MOBILE*/ 
